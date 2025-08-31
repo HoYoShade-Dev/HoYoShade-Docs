@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-
+//Launch ： npx vitepress dev
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "My Awesome Project",
@@ -8,7 +8,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Tutorial', link: '/docs/zh_cn/教程/教程' }
     ],
 
     sidebar: [
