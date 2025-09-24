@@ -129,6 +129,49 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+.custom-block.github-alert {
+  padding: 8px 16px;
+  margin: 16px 0;
+  border-left: 0.25rem solid transparent;
+}
+
+.custom-block.github-alert > .custom-block-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+}
+
+.custom-block.github-alert > .custom-block-title .github-alert-title {
+  margin-left: 8px;
+}
+
+.custom-block.github-alert.note {
+  border-color: var(--vp-c-default-3);
+}
+
+.custom-block.github-alert.note > .custom-block-title {
+  color: var(--vp-c-default-1);
+}
+
+.custom-block.github-alert.important {
+  border-color: var(--vp-c-purple-2);
+}
+
+.custom-block.github-alert.important > .custom-block-title {
+  color: var(--vp-c-purple-1);
+}
+
+/**
+ * Component: Custom Logo
+ * -------------------------------------------------------------------------- */
+
+.custom-logo {
+  height: 32px;
+  width: auto;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+
 /**
  * Component: Algolia
  * -------------------------------------------------------------------------- */

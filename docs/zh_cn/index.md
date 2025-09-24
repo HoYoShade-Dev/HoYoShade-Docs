@@ -6,6 +6,9 @@ hero:
   name: "HoYoShade"
   text: "负责任，可持续，全开源的ReShade解决方案。"
   tagline: 一个基于官方ReShade，为所有miHoYo/HoYoverse旗下游戏客户端开发的ReShade解决方案。
+  image:
+    src: /HoYoShadeLOGOCorned.png
+    alt: HoYoShade Logo
   actions:
     - theme: brand
       text: 快速开始

@@ -6,6 +6,9 @@ hero:
   name: "HoYoShade"
   text: "Responsible, Sustainable, Fully Open Source ReShade Solution."
   tagline: A ReShade solution based on official ReShade, developed for all miHoYo/HoYoverse game clients.
+  image:
+    src: /HoYoShadeLOGOCorned.png
+    alt: HoYoShade Logo
   actions:
     - theme: brand
       text: Quick Start

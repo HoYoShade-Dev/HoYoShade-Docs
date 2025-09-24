@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
-
+// 终端预览：npx vitepress dev 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "HoYoShade Docs",
+  head: [["link", { rel: "icon", href: "/HoYoShadeLOGOCorned.png" }]],
   description: "HoYoShade官方文档",
   srcDir: 'docs',
   
@@ -144,6 +145,82 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '重置搜索',
+                backButtonTitle: '关闭搜索',
+                noResultsText: '没有找到相关结果',
+                footer: {
+                  selectText: '选择',
+                  selectKeyAriaLabel: '输入',
+                  navigateText: '导航',
+                  navigateUpKeyAriaLabel: '上箭头',
+                  navigateDownKeyAriaLabel: '下箭头',
+                  closeText: '关闭',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          },
+          en: {
+            translations: {
+              button: {
+                buttonText: 'Search',
+                buttonAriaLabel: 'Search docs'
+              },
+              modal: {
+                displayDetails: 'Display detailed list',
+                resetButtonTitle: 'Reset search',
+                backButtonTitle: 'Close search',
+                noResultsText: 'No results found',
+                footer: {
+                  selectText: 'Select',
+                  selectKeyAriaLabel: 'Enter',
+                  navigateText: 'Navigate',
+                  navigateUpKeyAriaLabel: 'Up arrow',
+                  navigateDownKeyAriaLabel: 'Down arrow',
+                  closeText: 'Close',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          },
+          zh_hk: {
+            translations: {
+              button: {
+                buttonText: '搜尋',
+                buttonAriaLabel: '搜尋文檔'
+              },
+              modal: {
+                displayDetails: '顯示詳細列表',
+                resetButtonTitle: '重置搜尋',
+                backButtonTitle: '關閉搜尋',
+                noResultsText: '沒有找到相關結果',
+                footer: {
+                  selectText: '選擇',
+                  selectKeyAriaLabel: '輸入',
+                  navigateText: '導航',
+                  navigateUpKeyAriaLabel: '上箭頭',
+                  navigateDownKeyAriaLabel: '下箭頭',
+                  closeText: '關閉',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DuolaD/HoYoShade' }
     ]
