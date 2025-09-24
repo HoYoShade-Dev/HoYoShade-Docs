@@ -14,6 +14,7 @@ HoYoShade是一个专为米哈游游戏设计的图形增强工具，可以为�
 
 ## 快速安装
 
+在你开始安装/使用HoYoShade之前，请先阅读我们的 [用户协议](/user-agreement)。
 1. 下载最新版本的HoYoShade
 2. 选择适合你的启动器安装方式：
    - [使用米哈游启动器安装](/zh_cn/教程/mihoyo-launcher)
