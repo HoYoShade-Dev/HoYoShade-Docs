@@ -16,8 +16,8 @@ HoYoShade is a graphics enhancement tool specifically designed for miHoYo games,
 
 1. Download the latest version of HoYoShade
 2. Choose the appropriate launcher installation method:
-   - [Install with miHoYo Launcher](/en/tutorial/mihoyo-launcher)
-   - [Install with Starward Launcher](/en/tutorial/starward-launcher)
+   - [Install with miHoYo Launcher](/en/Tutorial/mihoyo-launcher)
+   - [Install with Starward Launcher](/en/Tutorial/starward-launcher)
 
 ## Need Help?
 
