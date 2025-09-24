@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: zh_cn/简介/简介.md
+      link: /docs/zh_cn/quick-start
     - theme: alt
       text: 项目地址
       link: https://github.com/DuolaD/HoYoShade
@@ -27,4 +27,3 @@ features:
   - title: 🇭🇰自由，开放，始于香港
     details: 除非你主动向我们分享你的数据，或者你向我们提交了issues，否则我们绝对以任何信息向你索要任何形式的数据。同时，主要开发及维护工作均在香港完成。对于部分敏感操作，我们会与我们的合作伙伴进行合作，以确保我们的活动始终保持匿名。
 ---
-
