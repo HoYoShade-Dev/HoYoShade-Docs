@@ -12,13 +12,16 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /docs/zh_cn/quick-start
+      link: /docs/quick-start
     - theme: alt
       text: 项目地址
       link: https://github.com/DuolaD/HoYoShade
     - theme: alt
       text: 发行界面
       link: https://github.com/DuolaD/HoYoShade/releases
+    - theme: alt
+      text: ReShade官方网站
+      link: https://reshade.me
 
 features:
   - title: ♻️负责任，可持续，全开源

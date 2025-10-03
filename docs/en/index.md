@@ -12,13 +12,16 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /docs/en/quick-start
+      link: /docs/quick-start
     - theme: alt
       text: Project Repository
       link: https://github.com/DuolaD/HoYoShade
     - theme: alt
       text: Releases
       link: https://github.com/DuolaD/HoYoShade/releases
+    - theme: alt
+      text: ReShade official website
+      link: https://reshade.me
 
 features:
   - title: ♻️Responsible, Sustainable, Fully Open Source
