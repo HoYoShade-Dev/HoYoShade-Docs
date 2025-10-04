@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "HoYoShade"
   text: "Responsible, Sustainable, Fully Open Source ReShade Solution."
-  tagline: A ReShade solution based on official ReShade, developed for all miHoYo/HoYoverse game clients.
+  tagline: First releases ⌈The butterfly of Hong Kong⌋ inject core. HoYo World, One Core to go!
   image:
     src: /HoYoShadeLOGOCorned.png
     alt: HoYoShade Logo
