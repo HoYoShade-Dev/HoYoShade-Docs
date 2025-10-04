@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /docs/quick-start
+      link: /quick-start
     - theme: alt
       text: Project Repository
       link: https://github.com/DuolaD/HoYoShade
