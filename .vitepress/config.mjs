@@ -70,9 +70,9 @@ export default defineConfig({
           {
             text: 'Tutorials',
             items: [
-              { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' }
+              { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' },
               { text: 'Install HoYoShade with miHoYo Launcher', link: '/en/Tutorial/mihoyo-launcher' },
-              { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' },
+              { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' }
             ]
           }
         ],
@@ -93,9 +93,9 @@ export default defineConfig({
             {
               text: 'Tutorials',
               items: [
-                { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' }
+                { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' },
                 { text: 'Install HoYoShade with miHoYo Launcher', link: '/en/Tutorial/mihoyo-launcher' },
-                { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' },
+                { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' }
               ]
             }
           ]
