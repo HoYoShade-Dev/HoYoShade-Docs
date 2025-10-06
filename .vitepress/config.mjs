@@ -25,9 +25,9 @@ export default defineConfig({
           {
             text: '教程',
             items: [
-              { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/教程/check-your-client' },
-              { text: '使用米哈游启动器安装HoYoShade', link: '/教程/mihoyo-launcher' },
-              { text: '在Starward启动器安装HoYoShade', link: '/教程/starward-launcher' }
+              { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/Tutorial/check-your-client' },
+              { text: '使用米哈游启动器安装HoYoShade', link: '/Tutorial/mihoyo-launcher' },
+              { text: '在Starward启动器安装HoYoShade', link: '/Tutorial/starward-launcher' }
             ]
           }
         ],
@@ -48,9 +48,9 @@ export default defineConfig({
             {
               text: '教程',
               items: [
-                { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/教程/check-your-client' },
-                { text: '使用米哈游启动器安装HoYoShade', link: '/教程/mihoyo-launcher' },
-                { text: '在Starward启动器安装HoYoShade', link: '/教程/starward-launcher' }
+                { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/Tutorial/check-your-client' },
+                { text: '使用米哈游启动器安装HoYoShade', link: '/Tutorial/mihoyo-launcher' },
+                { text: '在Starward启动器安装HoYoShade', link: '/Tutorial/starward-launcher' }
               ]
             }
           ]
@@ -115,9 +115,9 @@ export default defineConfig({
           {
             text: '教程',
             items: [
-              { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/教程/check-your-client' },
-              { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/教程/mihoyo-launcher' },
-              { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/教程/starward-launcher' }
+              { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/Tutorial/check-your-client' },
+              { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+              { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/starward-launcher' }
             ]
           }
         ],
@@ -138,9 +138,9 @@ export default defineConfig({
             {
               text: '教程',
               items: [
-                { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/教程/check-your-client' },
-                { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/教程/mihoyo-launcher' },
-                { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/教程/starward-launcher' }
+                { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/Tutorial/check-your-client' },
+                { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+                { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/starward-launcher' }
               ]
             }
           ]
