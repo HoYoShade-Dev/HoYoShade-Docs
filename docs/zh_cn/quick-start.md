@@ -105,8 +105,8 @@ HoYoShade集成了一些基于官方ReShade的开源项目并对其进行修改�
 
 1. 下载最新版本的HoYoShade
 2. 选择适合阁下的启动器安装方式：
-   - [使用米哈游启动器/HoYoPlay安装](/zh_cn/教程/mihoyo-launcher)
-   - [在Starward启动器安装](/zh_cn/教程/starward-launcher)
+  - [使用米哈游启动器/HoYoPlay安装](/zh_cn/Tutorial/mihoyo-launcher)
+  - [在Starward启动器安装](/zh_cn/Tutorial/starward-launcher)
 
 ## 需要帮助？
 
