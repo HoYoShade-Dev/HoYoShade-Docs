@@ -1,115 +1,122 @@
-# HoYoShade用户协议(更新于2024/06/27)
-协议编写者：DuolaDStudio Hong Kong Ltd.
+# HoYoShade 用户协议（正式版）
 
-## 前言
-感谢您选择下载并使用HoYoShade。在继续之前，我们恳请您认真阅读并理解本用户协议的所有条款。若您决定继续使用HoYoShade，则视为您已同意并接受本协议的所有内容。若您不同意本协议中的任何条款，请立即停止使用HoYoShade。
+> 更新日期：2025-10-07
 
-## 协议更新
-我们保留随时更新本协议的权利。
-本用户协议如有更新，新版本将自动适用于所有版本的HoYoShade。aHoYoShade。请您定期及时查看我们的消息以了解任何变更。对于没有及时查看最新用户协议的用户，怨不另行通知。
+本用户协议（以下简称“本协议”）适用于由 DuolaDStudio Hong Kong Ltd.（以下简称“本项目方”或“我们”）开发并发布的 HoYoShade 项目以及基于该项目的衍生版本。请在安装、下载或以其他任何方式使用 HoYoShade 之前，务必仔细阅读并充分理解本协议的全部内容。您一旦安装、启动或以其他任何方式使用本软件，即视为已充分阅读、理解并同意遵守本协议的全部条款。
 
-## 条款内容
-1.	风险告知：您应了解，使用HoYoShade中的Mod可能会对您的Mihoyo/Hoyoverse游戏账号产生风险，包括但不限于账号被封禁或其他任何不良后果。在此情况下，HoYoShade的开发者及其所有二次开发者均不承担任何责任。
-2.	禁止挪用：未经原开发者“哆啦 D 夢|DuolaD”的明确许可，您不得将HoYoShade中的reshade-shader文件夹中的任何效果库挪用或整合至其他ReShade中。
-3.	内容引用：当您使用HoYoShade在游戏中拍摄素材并发布视频时，您需要在视频或相关发布平台中明确标注：“该视频由GitHub@DuolaD/HoYoShade提供渲染支持”，或直接艾特并感谢“哆啦D 夢|DuolaD”本人账号。若因特殊原因（如米哈游创作激励计划、MCN机构或视频发布平台限制等）无法直接标注，您需提前联系原开发者进行说明，并在其评估后决定是否允许不标注。但一旦特殊原因不存在，您需自行重新进行标注。
-再次强调：若您不接受本协议中的任何条款，请立即停止使用HoYoShade。
+## 1. 定义
 
+- “软件”或“本项目”指 HoYoShade 及其附带的所有文件、资源、文档和相关工具。
+- “用户”指任何下载、安装、运行或以其他方式使用本软件的个人或组织。
 
+## 2. 使用许可
 
-## 重要提示
-•	为了您的安全考虑，我们仅推荐您使用我们发行的Releases在米哈游游戏上使用RE。任何人都可以使用OpenHoYoShade框架进行二次开发并实现其它/更多功能，但我们不会对这些二次开发版本进行安全审查。如果您选择使用由其它人二次开发并发行的非官方HoYoShade，请对所有潜在可能的安全性问题负责。  
-•	Mihoyo/Hoyoverse对Mod的态度较为模糊，虽明面上禁止，但实际操作中只要未涉及外挂或公开挑衅官方，通常不会对用户账号采取处罚措施。但请您注意，使用Mod导致的任何后果均由您自行承担。  
-•	在您将游戏内容发送至其它任何人或者进行直播之前，HoYoShade建议您先使用其它Mod隐藏游戏UID和用户信息，并且不要将HoYoShade及其它模组界面展示给其它任何人。  
-•	HoYoShade建议您将您的显卡和芯片组驱动更新至最新版本（如果可用），以获得来自您的设备制造商的最新支持，以尽可能减少与图形相关的问题，降低游戏崩溃的几率。  
-•	我们不建议您在官方服务器上运行HoYoShade。  
-•	对于Mihoyo/Hoyoverse开发商在公测后面向测试者的Beta版客户端和创作者体验服客户端(通常客户端版本号为:现行版本号.5.X)，HoYoShade理论上也可以提供注入和运行支持。但我们不建议您使用Beta客户端和/或创作者体验服客户端在官方服务器中运行HoYoShade，以免对HoYoShade全体开发者/二创开发者和您本人造成保密协议违约/违规/违法/经济损失等风险。  
-•	对于可能会发生的任何后果，HoYoShade全体开发者/全体二创开发者均不会承担任何责任。 
+本项目采用 BSD-3 开源许可（详见下文“开源许可（BSD-3）”）。在符合 BSD-3 许可证条款的前提下，您可以复制、修改和分发本软件。请注意，BSD-3 许可证为宽松许可，允许商业使用、再发布和闭源分发。
 
-### 最终解释权
-本用户协议的解释权归HoYoShade的开发者所有。如有任何疑问或争议，请联系我们进行沟通和解决。
+重要提醒：如果您希望对使用方式施加额外限制（例如禁止商业用途或仅限个人学习研究），须明确在项目声明中指出，但任何与 BSD-3 许可证相冲突的限制在法律上可能无法生效。若您需要强制禁止商业用途，请考虑改用其他许可（例如 CC BY-NC 或自定义许可），并在发布前咨询法律专业人士。
 
-感谢您的理解和配合，祝您使用愉快！
-DuolaDStudio Hong Kong Ltd. 全体成员 致上.
-                                                                     
-HoYoShade安装指南 (更新于2024/06/27)
-编写者：DuolaDStudio Hong Kong Ltd.
+## 3. 风险提示与免责
 
-建议：操作前请关闭或配置杀毒软件
-1.	在使用启动器注入游戏前/后，建议关闭杀毒软件以避免不必要的干扰。若操作被杀毒软件拦截或删除文件，请重新开始操作，并将相关文件夹添加至杀毒软件的白名单中。
-2.	操作完成后，请确保HoYoShade内所有文件已添加至杀毒软件的白名单以防止被杀毒软件误删或拦截。
-3.	如果必须在开启杀软的情况下进行操作，请将解压出来的文件夹添加到杀软的白名单中，并在文件被拦截或删除时允许继续操作。
-4.	除非开发者明确要求您这样做，或者您很清楚自己在做些什么，否则请勿随意删除由HoYoShade生成的文件。这些文件通常位于特定的文件夹内（非游戏根目录）。
+1. 使用风险：使用本软件（包括但不限于注入、Mod、资源替换等）可能对第三方平台（如 miHoYo/HoYoverse）产生风险，包括账号封禁、数据丢失或其他影响。您理解并自愿承担使用本软件可能带来的一切风险与后果。
+2. 责任限制：在法律允许的最大范围内，本项目方及其开发者对因使用或无法使用本软件而导致的任何直接、间接、附带、特殊、惩罚性或后果性损失不承担任何责任。
+3. 无担保：本软件按“现状”提供，不作任何明示或暗示的保证，包括但不限于对适销性、特定用途适用性或不侵权的保证。
 
-步骤一：下载与准备
-1.	从 HoYoShade 的 官方Release 界面中下载最新版本的 HoYoShade。
-2.	解压缩下载的压缩包，打开解压后的文件夹。
-步骤二：启动启动器
-1.	在模组文件夹中，选择您熟悉的语言启动启动器（双击打开即可，无需使用管理员权限）。
-目前已支持的语言有：
-o	简体中文
-o	繁体中文
-o	英语
-步骤三：初始化HoYoShade和安装ReShade.ini
-1.	首次启动启动器时，会生成一个名为 ReShade.ini 的配置文件到模组根目录。
-2.	按照启动器的提示找到游戏进程根目录并复制ReShade.ini至游戏进程根目录，复制完毕后即为完成初始化步骤。
- 
+## 4. 禁止行为
 
-如何找到游戏进程根目录？
+在任何情况下，未经原作者明确许可，您不得：
 
-—对于米哈游启动器/HoYoPlay:
- 
-	·点击开始启动按钮旁边的更多图标-游戏设置即可查看游戏进程根目录。
-	·点击'打开所在目录'即可使用资源管理器打开游戏进程根目录。
-—对于StarWard:
-	 
-	·点击开始启动按钮旁边的齿轮图标即可查看游戏进程根目录。
-	·点击游戏进程根目录即可使用资源管理器打开游戏进程根目录。
+- 将本项目中受著作权保护的素材（包括但不限于 shader 效果库、资源包等）擅自整合、打包并作为其他闭源或付费产品发布；
+- 利用本项目实施违法或侵害他人权益的行为；
+- 以任何方式移除或篡改本项目及其衍生版本中对原作者或贡献者的署名与版权信息（除法律允许的情况外）。
 
-确保目录内存在游戏进程文件即可。
-(例:YuanShen.exe,GenshinImpact.exe,BH3.exe,StarRail.exe,ZZZ.exe)
+注意：上述禁止行为为本项目方的合理要求与道德约定；但就许可权利本身而言，请以本项目所采用的开源协议（BSD-3）为准。
 
+## 5. 知识产权
 
-步骤四：注入HoYoShade至目标客户端
-请先确保游戏进程是关闭的
-1.	在启动器首页中选择正确的客户端启动注入程序
-2.	在注入器提示“等待游戏启动”的窗口后使用启动器启动游戏即可。
-（直接使用快捷方式或直接双击运行游戏进程可能会导致注入失败）
-（选错目标客户端会导致无法注入/注入器不对游戏做出反应）
-注意事项：
-1.	请注意，在一般情况下，大多数的FPS解锁器都会要求你不要在使用FPS解锁器的情况下更改游戏中的帧率设置。
-2.	对于并未出现在支持游戏列表中的游戏，你可以自行尝试选择使用注入器中已支持的游戏/在开发者选项中选择自定义注入来尝试注入HoYoShade。
-3.	HoYoShade支持同时与其它主流Mod一并注入，且不存在任何冲突问题。但请注意并确保其它游戏Mod之间不会有冲突（例：原神无人机与GIMI和甜瓜）。
-4.	如果你使用多个Mod注入至游戏中，且有Mod会自行启动游戏。则将会自行启动游戏的Mod在其它Mod提示等待注入时最后启动即可（例：HoYoShade与无人机：先打开HoYoShade注入至等待游戏启动界面，然后启动无人机即可一并注入无人机和HoYoShade）。
+本项目（除特别声明外）之著作权、商标权与其他相关知识产权归本项目方或相应权利人所有。您在遵守本协议及开源许可的前提下获得使用权，但不构成对任何权利的转让。
 
-遵循以上步骤，您应该能够成功安装并使用 HoYoShade。如有任何疑问或遇到问题，请与开发者联系。
-祝您使用愉快！
-DuolaDStudio Hong Kong Ltd. 全体成员 致上.
-                                                                     
-## 联系方式
+## 6. 第三方组件
 
-如果你有任何疑问，欢迎通过下方的联系方式向我们咨询。
-如果你无法通过下方的联系方式联系我们，则说明开发者的联系方式信息可能已经更新，请前往开发者的GitHub主页查看最新的联系方式。
+本项目可能包含第三方开源组件或二进制库，这些组件可能受各自的许可约束。除非另有明确声明，第三方组件的许可与责任由其各自权利方承担，您使用这些组件时还应遵守相应许可条款。
 
-加入我们的交流群组：  
-中国大陆：  
-QQ群组[377103253]  
+## 7. 修改与再发布
 
+凡对本项目进行修改、派生作品的创作或再发布，须在遵守 BSD-3 许可证的前提下进行：保留合适的版权声明、许可证声明，并在必要时提供源代码（视目标许可而定）。
 
-海外:
-Discord[https://discord.gg/FYVUxwa5RF]  
-Telegram[https://t.me/DuolaDStudio]  
+## 8. 社区与贡献
 
-主要开发者:哆啦D夢|DuolaD  
-GitHub主页[https://github.com/DuolaD]  
-微信/抖音[GitHub_DuolaD]  
-QQ[3484767759]  
-邮箱[D_mou@outlook.com]  
-HoYoLAB:[https://www.hoyolab.com/accountCenter/postList?id=192633110]  
-Telegram:[https://t.me/GitHub_DuolaD]  
+我们欢迎社区的参与与贡献。对本项目提交的贡献（包括但不限于代码、文档、资源）通常视为自动授权本项目方以 BSD-3 许可方式使用该贡献（具体以仓库中的 CONTRIBUTING 或贡献协议为准）。如果您对贡献的权利或许可有特殊要求，请在提交前与项目维护者沟通并取得书面同意。
 
-琳尼特|LynetteNotFound没有公开联系方式，谨防被骗。  
+## 9. 终止
 
-祝您使用愉快！  
-DuolaDStudio Hong Kong Ltd. 全体成员 致上.  
-                                                                     
+若您违反本协议或适用法律，本项目方有权随时终止或中止您对本软件的使用权。终止不影响在终止前已产生的权利或责任。
+
+## 10. 协议变更
+
+本协议可由本项目方不时修订。修订后的协议一经在项目主页或发行页面发布，即取代并适用于所有后续使用。对于已存在的分发版本，协议适用范围以发版时随附的协议文本为准。
+
+## 11. 适用法律与争议解决
+
+本协议适用香港（或项目维护者所在法域）法律管辖。因本协议产生的任何争议，应首先通过友好协商解决；协商不成的，可提交有管辖权的人民法院或仲裁机构按适用法律处理。
+
+## 12. 联系方式
+
+如有疑问或需进一步联系，请使用下列任一方式：
+
+- 主要开发者：哆啦D夢 | DuolaD
+- GitHub： https://github.com/DuolaD
+- 邮箱： D_mou@outlook.com
+- QQ：3484767759
+- 官方社群（请以仓库 README 中的最新信息为准）：
+  - QQ 群（中国大陆）：377103253
+  - Discord： https://discord.gg/FYVUxwa5RF
+  - Telegram： https://t.me/DuolaDStudio
+
+（注：联系方式可能会变更，请以项目仓库主页为准）
+
+---
+
+## 开源许可（BSD-3 — 3-Clause BSD License）
+
+以下为 BSD 3-Clause 许可证的标准英文文本（法律效力以英文原文为准），下方附中文说明性译本以便阅读参考：
+
+Copyright (c) [2024], [哆啦D夢|DuolaD]
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---
+
+中文说明性译本（仅供参考，法律上以英文原文为准）：
+
+版权所有 (c) [2024]，[哆啦D夢|DuolaD]
+保留所有权利。
+
+允许在源代码和二进制形式中再发行和使用，无论是否经过修改，但须符合以下条件：
+
+1. 源代码的再发行必须保留上述版权声明、本条件列表和下述免责声明。
+2. 二进制形式的再发行必须在随附的文档或其他材料中重现上述版权声明、本条件列表和下述免责声明。
+3. 未经特定事先书面许可，不得使用版权所有者或贡献者的姓名为源自该软件的产品背书或宣传。
+
+本软件由版权所有者和贡献者按“原样”提供，对任何明示或暗示的保证（包括但不限于对适销性或特定用途适用性的暗示保证）不作任何形式的声明或保证。在任何情况下，版权所有者或贡献者均不对因本软件的使用或无法使用而产生的任何直接、间接、附带、特殊、惩罚性或结果性损害承担责任，即使事先已被告知发生该等损害的可能性亦然。
+
+---
+
+说明与提醒：
+
+- BSD-3 是宽松的开源许可证，允许商业使用、闭源再分发和基于该软件的专有派生作品；若您希望禁止商业用途，这一点与 BSD-3 的条款相冲突，不能同时生效。
+- 如果项目维护方或贡献者希望在法律上禁止商业用途或强制要求同样的开源条款（如 AGPL-3.0），建议改用相应的强制性许可证并在仓库中明确替换许可文本。
+
+---
+
+感谢您关注并使用 HoYoShade。
+
+DuolaDStudio Hong Kong Ltd.
+
 
