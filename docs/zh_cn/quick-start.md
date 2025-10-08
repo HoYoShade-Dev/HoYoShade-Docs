@@ -50,7 +50,7 @@ HoYoShade集成了一些基于官方ReShade的开源项目并对其进行修改�
   
 - 如果HoYoShade中部分功能违反了阁下所在的国际及地区当局政府的现行法律/法规/政策，请阁下主动拒绝使用它们。由此产生的法律/法规/政策与HoYoShade贡献者无关。
 
-- 除非另行说明，否则HoYoShade及其附属其它界面（包括此文档站）中的 miHoYo（米哈游）/ HoYoverse 均指代 `miHoYo（米哈游）/ HoYoverse 集团`，而非具体的某个附属公司/团体/个人。
+- 除非另行说明，否则HoYoShade及其附属其它界面（包括此文档站）中的 miHoYo（米哈游）/ HoYoverse 均指代 miHoYo（米哈游）/ HoYoverse 集团，而非具体的某个附属公司/团体/个人。
   
 - HoYoShade本身及其贡献者均与 miHoYo（米哈游）/ HoYoverse 无任何关联。如果阁下在使用过程中有建议/issues（议题）想要反馈时，请不要使用游戏开发商/发行商的官方渠道向官方进行反馈。
   

@@ -6,20 +6,20 @@ We recommend reading the linked pages below for more details so you can understa
 
 ## What is HoYoShade?
 
-HoYoShade is an open-source fork of the official ReShade project, specially developed for games published by `miHoYo/HoYoverse`. It focuses on improved reliability, features and stability compared with upstream ReShade and aims to be an excellent graphics enhancement tool.
+HoYoShade is an open-source fork of the official ReShade project, specially developed for games published by miHoYo/HoYoverse. It focuses on improved reliability, features and stability compared with upstream ReShade and aims to be an excellent graphics enhancement tool.
 
 ReShade works by intercepting the rendering calls and image data sent from the CPU to the GPU, modifying those rendering data streams, and producing enhanced visual effects in the game.
 
 Compared to the upstream ReShade, HoYoShade:
 
-- Adds extra support for all games and launchers published under the `miHoYo/HoYoverse` umbrella, providing a unified, reliable, and configurable injection solution so users don’t have to pay extra learning/compatibility costs when sharing across different systems/configurations.
+- Adds extra support for all games and launchers published under the miHoYo/HoYoverse umbrella, providing a unified, reliable, and configurable injection solution so users don’t have to pay extra learning/compatibility costs when sharing across different systems/configurations.
   
-- Is designed to tolerate official game updates/patches pushed by `miHoYo/HoYoverse` so you can continue using HoYoShade after updates.
+- Is designed to tolerate official game updates/patches pushed by miHoYo/HoYoverse so you can continue using HoYoShade after updates.
 - Provides localized, region-specific, and sometimes exclusive features and additional support for countries and regions in Greater China (Mainland China, Hong Kong, Macau, Taiwan, Singapore) and some Asia-Pacific regions.
   
-- Collaborates with many official `miHoYo/HoYoverse` contracted creators and has grown a community composed of contracted creators, contributors and players.
+- Collaborates with many official miHoYo/HoYoverse contracted creators and has grown a community composed of contracted creators, contributors and players.
   
-- Maintains compatibility-focused development for popular launchers used under `miHoYo/HoYoverse` and provides community-developed presets and tooling.
+- Maintains compatibility-focused development for popular launchers used under miHoYo/HoYoverse and provides community-developed presets and tooling.
   
 - Supplies some pre-made presets and recommended configurations.
   
@@ -27,7 +27,7 @@ Compared to the upstream ReShade, HoYoShade:
   
 - Keeps file structure and usage patterns as consistent as possible with official ReShade to reduce user learning costs.
 
-In the future, HoYoShade plans to support more `miHoYo/HoYoverse` games.
+In the future, HoYoShade plans to support more miHoYo/HoYoverse games.
 
 HoYoShade integrates and modifies several open-source projects based on upstream ReShade — see the [Resource](#〢-来源) section for a concrete list.
 
@@ -45,9 +45,9 @@ Before you get started, please take time to carefully read the sections below an
 
 - If any features within HoYoShade violate the laws, regulations, or policies of your international or regional government, please voluntarily refuse to use them. HoYoShade contributors are not responsible for any such violations.
   
-- Unless explicitly stated otherwise, references to `miHoYo/HoYoverse` throughout HoYoShade and its affiliated pages indicate `miHoYo/HoYoverse` as an organization or group, not any specific subsidiary company, group, or individual.
+- Unless explicitly stated otherwise, references to miHoYo/HoYoverse throughout HoYoShade and its affiliated pages indicate miHoYo/HoYoverse as an organization or group, not any specific subsidiary company, group, or individual.
   
-- HoYoShade and its maintainers have no affiliation with `miHoYo/HoYoverse`. If you wish to report problems or file issues about the official game, do not report them through the game developer/publisher channels — use the project’s issue tracker or the maintainers’ contact channels instead.
+- HoYoShade and its maintainers have no affiliation with miHoYo/HoYoverse. If you wish to report problems or file issues about the official game, do not report them through the game developer/publisher channels — use the project’s issue tracker or the maintainers’ contact channels instead.
   
 - HoYoShade is a free, open-source mod. The open-source edition will remain free forever. If you downloaded open-source edition for paid/go to this website for paid, contact the seller/platform for refunds. If needed, retain proof of purchase and report to local enforcement or law agencies in your country/region.
   
@@ -63,7 +63,7 @@ Before you get started, please take time to carefully read the sections below an
 
 - In certain countries/regions with strict review and control (for example: Vietnam, India), the game client you can obtain locally may be published by a local publisher instead of miHoYo/HoYoverse. Usually this does not affect the classification of the client type and typically does not prevent continued use of HoYoShade afterwards.
 
-- In some countries/regions (for example: Mainland China), `miHoYo/HoYoverse` may sell the publishing rights for their games to other local publishers, so you might see different publishers operating the same game in the same country/region. This usually does not affect the client type classification and normally does not affect continued use of HoYoShade.
+- In some countries/regions (for example: Mainland China), miHoYo/HoYoverse may sell the publishing rights for their games to other local publishers, so you might see different publishers operating the same game in the same country/region. This usually does not affect the client type classification and normally does not affect continued use of HoYoShade.
 
 ## Hardware requirements
 
