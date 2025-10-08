@@ -1,116 +1,116 @@
-# HoYoShade用戶協定（更新於2024/06/27）
-**協議編寫者：DuolaDStudio Hong Kong Ltd.**
+# HoYoShade 用戶協議（正式版）
 
-## 前言
-感謝您選擇下載並使用HoYoShade。 在繼續之前，我們懇請您認真閱讀並理解本使用者協定的所有條款。 若您決定繼續使用HoYoShade，則視為您已同意並接受本協定的所有內容。 若您不同意本協定中的任何條款，請立即停止使用HoYoShade。
+> 更新日期：2025-10-07
 
-## 協定更新
-我們保留隨時更新本協議的權利。  
-本用戶協定如有更新，新版本將自動適用於所有版本的HoYoShade。 aHoYoShade。 請您定期及時查看我們的消息以瞭解任何變更。 對於沒有及時查看最新使用者協議的使用者，怨不另行通知。 
+本用戶協議（以下簡稱「本協議」）適用於由 DuolaDStudio Hong Kong Ltd. 成員及其所有開源社區貢獻者（以下簡稱「本專案方」或「我們」）開發並發布的 HoYoShade / ⌈幻港之蝶⌋ 注入核心專案以及基於該專案的衍生版本。請在安裝、下載或以其他任何方式使用 HoYoShade 之前，務必仔細閱讀並充分理解本協議的全部內容。您一旦安裝、啟動或以其他任何方式使用本軟體，即視為已充分閱讀、理解並同意遵守本協議的全部條款。
 
-## 條款內容
-1.	風險告知：您應瞭解，使用HoYoShade中的Mod可能會對您的Mihoyo/Hoyoverse遊戲賬號產生風險，包括但不限於帳號被封禁或其他任何不良後果。 在此情況下，HoYoShade的開發者及其所有二次開發者均不承擔任何責任。 
-2.	禁止挪用：未經原開發者“哆啦 D 夢|DuolaD“的明確許可，您不得將HoYoShade中的reshade-shader檔夾中的任何效果庫挪用或整合至其他ReShade中。 
-3.	內容引用：當您使用HoYoShade在遊戲中拍攝素材併發佈視頻時，您需要在視頻或相關發佈平臺中明確標註：「該視頻由GitHub@DuolaD/HoYoShade提供渲染支援」。，或直接艾特並感謝「哆啦D 夢|DuolaD“本人帳號。 若因特殊原因（如米哈遊創作激勵計劃、MCN機構或視頻發佈平臺限制等）無法直接標註，您需提前聯繫原開發者進行說明，並在其評估后決定是否允許不標註。 但一旦特殊原因不存在，您需自行重新進行標註。 
-再次強調：若您不接受本協定中的任何條款，請立即停止使用HoYoShade。 
+## 1. 定義
 
-## 重要提示
-•	為了您的安全考慮，我們僅推薦您使用我們發行的Releases在米哈遊遊戲上使用RE。 任何人都可以使用OpenHoYoShade框架進行二次開發並實現其它/更多功能，但我們不會對這些二次開發版本進行安全審查。 如果您選擇使用由其它人二次開發並發行的非官方HoYoShade，請對所有潛在可能的安全性問題負責。  
-•	Mihoyo/Hoyoverse對Mod的態度較為模糊，雖明面上禁止，但實際操作中只要未涉及外掛或公開挑釁官方，通常不會對用戶賬號採取處罰措施。 但請您注意，使用Mod導致的任何後果均由您自行承擔。  
-•	在您將遊戲內容發送至其它任何人或者進行直播之前，HoYoShade建議您先使用其它Mod隱藏遊戲UID和使用者信息，並且不要將HoYoShade及其它模組介面展示給其它任何人。  
-•	HoYoShade建議您將您的顯卡和晶片組驅動更新至最新版本（如果可用），以獲得來自您的設備製造商的最新支援，以盡可能減少與圖形相關的問題，降低遊戲崩潰的幾率。  
-•	我們不建議您在官方伺服器上運行HoYoShade。  
-•	對於Mihoyo/Hoyoverse開發商在公測後面向測試者的Beta版用戶端和創作者體驗服用戶端（通常用戶端版本號為：現行版本號.5.X），HoYoShade理論上也可以提供注入和運行支援。 但我們不建議您使用Beta用戶端和/或創作者體驗服用戶端在官方伺服器中運行HoYoShade，以免對HoYoShade全體開發者/二創開發者和您本人造成保密協定違約/違規/違法/經濟損失等風險。  
-•	對於可能會發生的任何後果，HoYoShade全體開發者/全體二創開發者均不會承擔任何責任。 
+- 「軟體」或「本專案」指 HoYoShade 及 ⌈幻港之蝶⌋ 注入核心及其夾帶的所有檔案、資源、文件與相關工具。
+- 「使用者」指任何下載、安裝、執行或以其他方式使用本軟體的個人或組織。
 
-### 最終解釋權
-本使用者協議的解釋權歸HoYoShade的開發者所有。 如有任何疑問或爭議，請聯繫我們進行溝通和解決。
+## 2. 使用許可
 
-感謝您的理解和配合，祝您使用愉快！
-DuolaDStudio Hong Kong Ltd. 全體成員 致上.
-                                                                     
-HoYoShade安裝指南 （更新於2024/06/27）
-編寫者：DuolaDStudio Hong Kong Ltd.
+本專案採用 BSD-3 開源許可（詳見下文「開源許可（BSD-3）」）。在符合 BSD-3 許可條款的前提下，您可以複製、修改與散佈本軟體。請注意，BSD-3 為寬鬆授權，允許商業使用、再發佈與閉源散佈。
 
-建議：操作前請關閉或配置殺毒軟體
-1.	在使用啟動器注入遊戲前/后，建議關閉殺毒軟體以避免不必要的干擾。 若操作被殺毒軟體攔截或刪除檔，請重新開始操作，並將相關資料夾添加至殺毒軟體的白名單中。 
-2.	操作完成後，請確保HoYoShade內所有檔已添加至殺毒軟體的白名單以防止被殺毒軟體誤刪或攔截。 
-3.	如果必須在開啟殺軟的情況下進行操作，請將解壓出來的資料夾添加到殺軟的白名單中，並在檔被攔截或刪除時允許繼續操作。
-4.	除非開發者明確要求您這樣做，或者您很清楚自己在做些什麼，否則請勿隨意刪除由HoYoShade生成的檔。 這些檔通常位於特定的資料夾內（非遊戲根目錄）。 
+重要提醒：若您希望對使用方式施加額外限制（例如禁止商業用途或僅限個人學習研究），需在專案聲明中明確指出，但任何與 BSD-3 許可相衝突的限制在法律上可能無法生效。若需強制禁止商業用途，請考慮改用其他授權（例如 CC BY-NC 或自訂授權），並於發布前諮詢法律專業意見。
 
-步驟一：下載與準備
-1.	從 HoYoShade 的 官方Release 介面中下載最新版本的 HoYoShade。 
-2.	解壓縮下載的壓縮包，打開解壓后的資料夾。
-步驟二：啟動啟動器
-1.	在模組資料夾中，選擇您熟悉的語言啟動啟動器（按兩下打開即可，無需使用管理員許可權）。
-目前已支援的語言有：
-o	簡體中文
-o	繁體中文
-o	英語
-步驟三：初始化HoYoShade和安裝ReShade.ini
-1.	首次啟動啟動器時，會生成一個名為 ReShade.ini 的配置檔到模組根目錄。 
-2.	按照啟動器的提示找到遊戲進程根目錄並複製ReShade.ini至遊戲進程根目錄，複製完畢后即為完成初始化步驟。
- 
+## 3. 風險提示與免責
 
-如何找到遊戲進程根目錄？
-—對於米哈遊啟動器/HoYoPlay：
- 
+1. 使用風險：使用本專案的原始碼/構建產物/發行產物可能會對您的裝置硬體/軟體、miHoYo（米哈遊）/HoYoverse 遊戲客戶端及其帳號造成風險，包括但不限於：裝置硬體/軟體加速老化或損壞；遊戲閃退、效能不穩或客戶端損壞；miHoYo/HoYoverse 帳號被風控、封禁等。您理解並自願承擔使用本軟體可能帶來的一切風險與後果。
+2. 責任限制：在法律允許的最大範圍內，本專案方及其開發者對於因使用或無法使用本軟體而導致的任何直接、間接、附帶、特殊、懲罰性或後果性損失不承擔任何責任。
+3. 無擔保：本軟體按「現狀」提供，不作任何明示或暗示之保證，包括但不限於對適售性、特定用途適用性或不侵權之保證。
 
-	·點擊開始啟動按鈕旁邊的更多圖示-遊戲設置即可查看遊戲進程根目錄。
-	·點擊'打開所在目錄'即可使用資源管理器打開遊戲進程根目錄。
-—對於StarWard：
-	 
-	·點擊開始啟動按鈕旁邊的齒輪圖示即可查看遊戲進程根目錄。
-	·點擊遊戲進程根目錄即可使用資源管理器打開遊戲進程根目錄。
+## 4. 禁止行為
 
-確保目錄記憶體在遊戲進程檔即可。
-（例:YuanShen.exe，GenshinImpact.exe，BH3.exe，StarRail.exe，ZZZ.exe）
+在任何情況下，未經原作者明確許可，您不得：
 
+- 將本專案中受著作權保護的素材（包含但不限於：未經書面許可、按原貢獻者名單原樣提供的衍生版本等）擅自整合、打包並作為其他閉源或付費產品發布；
+- 利用本專案實施違法、違規或侵害他人權益之行為；
+- 利用本專案實施違反遊戲開發商/發行商相關規範並危害遊戲內平衡之行為（包括但不限於：使用 ⌈幻港之蝶⌋ 注入核心製作外掛等）；
+- 利用本專案發行產物，以任何方式「按原樣」提供於公開交易市場給第三者；
+- 以任何方式移除或竄改本專案及其衍生版本中對原作者或貢獻者的署名與版權資訊（法律允許或取得主要貢獻者書面允許之情況除外）。
 
+注意：上述禁止行為為本專案方之合理要求與道德約定；但就授權權利本身，以本專案所採用之開源協議（BSD-3）為準。
 
+未遵守上述禁止規定（尤其是違反 BSD-3 或移除/竄改署名與版權資訊）者，可能依香港相關法律與法規、美國數位千年著作權法（DMCA）或其他適用法域之法律規定面臨警告、訴訟等法律責任。
 
+## 5. 知識產權
 
-步驟四：注入HoYoShade至目標用戶端
-請先確保遊戲進程是關閉的
-1.	在啟動器首頁中選擇正確的客戶端啟動注入程式
-2.	在注入器提示「等待遊戲啟動」的視窗後使用啟動器啟動遊戲即可。
-（直接使用快捷方式或直接按兩下運行遊戲進程可能會導致注入失敗）
-（選錯目標用戶端會導致無法注入/注入器不對遊戲做出反應）
-注意事項：
-1.	請注意，在一般情況下，大多數的FPS解鎖器都會要求你不要在使用FPS解鎖器的情況下更改遊戲中的幀率設置。
-2.	對於並未出現在支援遊戲清單中的遊戲，你可以自行嘗試選擇使用注入器中已支援的遊戲/在開發者選項中選擇自定義注入來嘗試注入HoYoShade。
-3.	HoYoShade支援同時與其它主流Mod一併注入，且不存在任何衝突問題。 但請注意並確保其它遊戲Mod之間不會有衝突（例：原神無人機與GIMI和甜瓜）。
-4.	如果你使用多個Mod注入至遊戲中，且有Mod會自行啟動遊戲。 則將會自行啟動遊戲的Mod在其它Mod提示等待注入時最後啟動即可（例：HoYoShade與無人機：先打開HoYoShade注入至等待遊戲啟動介面，然後啟動無人機即可一併注入無人機和HoYoShade）。
+本專案（除特別聲明外）之著作權、商標權與其他相關智慧財產權歸本專案方或相應權利人所有。您在遵守本協議及開源許可之前提下取得使用權，但不構成任何權利之轉讓。
 
-遵循以上步驟，您應該能夠成功安裝並使用 HoYoShade。 如有任何疑問或遇到問題，請與開發者聯繫。
-祝您使用愉快！
-DuolaDStudio Hong Kong Ltd. 全體成員 致上.
-                                                                     
-## 聯繫方式
+## 6. 第三方元件
 
-如果你有任何疑問，歡迎通過下方的聯繫方式向我們諮詢。
-如果你無法通過下方的聯繫方式聯繫我們，則說明開發者的聯繫方式資訊可能已經更新，請前往開發者的GitHub主頁查看最新的聯繫方式。
+本專案可能包含第三方開源元件或二進位函式庫，該等元件可能受各自授權約束。除非另有明確聲明，第三方元件之授權與責任由其各自權利人承擔，您使用這些元件時仍應遵守相應授權條款。
 
-加入我們的交流群組：
-中國大陸：
-QQ群組[377103253]
+## 7. 修改與再發布
 
+凡對本專案進行修改、創作派生作品或再發布，須在遵守 BSD-3 許可之前提下進行：保留適當之版權聲明、許可聲明，並在必要時提供原始碼（視目標許可而定）。
 
-海外：
-Discord[https://discord.gg/FYVUxwa5RF]
-Telegram[https://t.me/DuolaDStudio]
+## 8. 社區與貢獻
 
-主要開發者：哆啦D夢|DuolaD
-GitHub主頁[https://github.com/DuolaD]
-微信/抖音[GitHub_DuolaD]
-QQ[3484767759]
-郵箱[D_mou@outlook.com]
-HoYoLAB:[https://www.hoyolab.com/accountCenter/postList?id=192633110]
-Telegram:[https://t.me/GitHub_DuolaD]
+我們歡迎社群之參與與貢獻。對本專案提交之貢獻（包含但不限於程式碼、文件、資源）通常視為自動授權本專案方以 BSD-3 許可方式使用該貢獻（具體以倉庫中的 CONTRIBUTING 或貢獻協議為準）。若您對貢獻之權利或授權有特殊要求，請於提交前與專案維護者溝通並取得書面同意。
 
-琳尼特|LynetteNotFound沒有公開聯繫方式，謹防被騙。
+## 9. 終止
 
-祝您使用愉快！
-DuolaDStudio Hong Kong Ltd. 全體成員 致上.
-                                                                     
+若您違反本協議或適用法律，本專案方有權隨時終止或中止您對本軟體之使用權。終止不影響在終止前已產生之權利或責任。
+
+## 10. 協議變更
+
+本協議可由本專案方不時修訂。修訂後之協議一經於專案主頁或發行頁發布，即取代並適用於所有後續使用。對於已存在之發行版本，協議適用範圍以發版時隨附之協議文本為準。
+
+## 11. 適用法律與爭議解決
+
+本協議適用香港（或專案維護者所在法域）法律管轄。因本協議產生之任何爭議，應先透過友好協商解決；協商不成者，可提交有管轄權之法院或仲裁機構按適用法律處理。
+
+## 12. 聯絡方式
+
+如有疑問或需進一步聯絡，請使用下列任一方式：
+
+- 主要開發者：哆啦D夢 | DuolaD
+- GitHub： https://github.com/DuolaD
+
+- 官方社群：
+  - QQ 群（中國大陸）：377103253
+
+（註：聯絡資訊可能變更，請以專案倉庫主頁/開發者說明為準）
+
+---
+
+## 開源許可（BSD-3 — 3-Clause BSD License）
+
+以下為 BSD 3-Clause 許可之標準英文文本（法律效力以英文原文為準），下方附繁體中文之說明性譯本以便參考：
+
+Copyright (c) [2024], [哆啦D夢|DuolaD]
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---
+
+繁體中文說明性譯本（僅供參考，法律上以英文原文為準）：
+
+版權所有 (c) [2024]，[哆啦D夢|DuolaD]
+保留所有權利。
+
+允許在源代碼與二進位形式中再分發與使用，無論是否經過修改，但須符合下列條件：
+
+1. 再分發的源代碼必須保留上述版權聲明、本條件列表與下述免責聲明。
+2. 二進位形式的再分發必須於隨附之文件或其他材料中複製上述版權聲明、本條件列表與下述免責聲明。
+3. 未經特定事先書面許可，不得使用版權持有人或貢獻者之名稱為源自該軟體之產品背書或宣傳。
+
+本軟體由版權持有人與貢獻者按「原樣」提供，不作任何明示或暗示之保證（包括但不限於對適售性或特定用途適用性之暗示保證）。在任何情況下，版權持有人或貢獻者均不對因本軟體之使用或無法使用所致之任何直接、間接、附帶、特殊、懲罰性或結果性損害負責，即使事先已被告知發生該等損害之可能性亦然。
+
+---
+
+感謝您關注並使用 HoYoShade。
+
+DuolaDStudio Hong Kong Ltd. 全體成員 及 HoYoShade 全體社群貢獻者。
+
 
