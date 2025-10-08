@@ -8,94 +8,94 @@ export default defineConfig({
   srcDir: 'docs',
   
   rewrites: {
-    'zh_cn/:path*': ':path*'
+    'en/:path*': ':path*'
   },
-  
+
   locales: {
     root: {
-      label: '简体中文',
-      lang: 'zh-CN',
-      title: 'HoYoShade 文档',
-      description: 'HoYoShade官方文档',
-      themeConfig: {
-        nav: [
-          { text: '首页', link: '/' },
-          { text: '快速开始', link: '/quick-start' },
-          { text: '用户协议', link: '/user-agreement' },
-          {
-            text: '教程',
-            items: [
-              { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/Tutorial/check-your-client' },
-              { text: '使用米哈游启动器安装HoYoShade', link: '/Tutorial/mihoyo-launcher' },
-              { text: '在Starward启动器安装HoYoShade', link: '/Tutorial/starward-launcher' }
-            ]
-          }
-        ],
-        sidebar: {
-          '/': [
-            {
-              text: '快速开始',
-              items: [
-                { text: '快速开始', link: '/quick-start' }
-              ]
-            },
-            {
-              text: '用户协议',
-              items: [
-                { text: '用户协议', link: '/user-agreement' }
-              ]
-            },
-            {
-              text: '教程',
-              items: [
-                { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/Tutorial/check-your-client' },
-                { text: '使用米哈游启动器安装HoYoShade', link: '/Tutorial/mihoyo-launcher' },
-                { text: '在Starward启动器安装HoYoShade', link: '/Tutorial/starward-launcher' }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    'en': {
       label: 'English',
       lang: 'en-US',
       title: 'HoYoShade Docs',
       description: 'Official HoYoShade Documentation',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/en/' },
-          { text: 'Quick Start', link: '/en/quick-start' },
-          { text: 'User Agreement', link: '/en/user-agreement' },
+          { text: 'Home', link: '/' },
+          { text: 'Quick Start', link: '/quick-start' },
+          { text: 'User Agreement', link: '/user-agreement' },
           {
             text: 'Tutorials',
             items: [
-              { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' },
-              { text: 'Install HoYoShade with miHoYo Launcher', link: '/en/Tutorial/mihoyo-launcher' },
-              { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' }
+              { text: 'Check your miHoYo/HoYoverse Client', link: '/Tutorial/check-your-client' },
+              { text: 'Install HoYoShade with miHoYo Launcher', link: '/Tutorial/mihoyo-launcher' },
+              { text: 'Install HoYoShade with Starward Launcher', link: '/Tutorial/starward-launcher' }
             ]
           }
         ],
         sidebar: {
-          '/en/': [
+          '/': [
             {
               text: 'Quick Start',
               items: [
-                { text: 'Quick Start', link: '/en/quick-start' }
+                { text: 'Quick Start', link: '/quick-start' }
               ]
             },
             {
               text: 'User Agreement',
               items: [
-                { text: 'User Agreement', link: '/en/user-agreement' }
+                { text: 'User Agreement', link: '/user-agreement' }
               ]
             },
             {
               text: 'Tutorials',
               items: [
-                { text: 'Check your miHoYo/HoYoverse Client', link: '/en/Tutorial/check-your-client' },
-                { text: 'Install HoYoShade with miHoYo Launcher', link: '/en/Tutorial/mihoyo-launcher' },
-                { text: 'Install HoYoShade with Starward Launcher', link: '/en/Tutorial/starward-launcher' }
+                { text: 'Check your miHoYo/HoYoverse Client', link: '/Tutorial/check-your-client' },
+                { text: 'Install HoYoShade with miHoYo Launcher', link: '/Tutorial/mihoyo-launcher' },
+                { text: 'Install HoYoShade with Starward Launcher', link: '/Tutorial/starward-launcher' }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    'zh_cn': {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: 'HoYoShade 文档',
+      description: 'HoYoShade官方文档',
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/zh_cn/' },
+          { text: '快速开始', link: '/zh_cn/quick-start' },
+          { text: '用户协议', link: '/zh_cn/user-agreement' },
+          {
+            text: '教程',
+            items: [
+              { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/zh_cn/Tutorial/check-your-client' },
+              { text: '使用米哈游启动器安装HoYoShade', link: '/zh_cn/Tutorial/mihoyo-launcher' },
+              { text: '在Starward启动器安装HoYoShade', link: '/zh_cn/Tutorial/starward-launcher' }
+            ]
+          }
+        ],
+        sidebar: {
+          '/zh_cn/': [
+            {
+              text: '快速开始',
+              items: [
+                { text: '快速开始', link: '/zh_cn/quick-start' }
+              ]
+            },
+            {
+              text: '用户协议',
+              items: [
+                { text: '用户协议', link: '/zh_cn/user-agreement' }
+              ]
+            },
+            {
+              text: '教程',
+              items: [
+                { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/zh_cn/Tutorial/check-your-client' },
+                { text: '使用米哈游启动器安装HoYoShade', link: '/zh_cn/Tutorial/mihoyo-launcher' },
+                { text: '在Starward启动器安装HoYoShade', link: '/zh_cn/Tutorial/starward-launcher' }
               ]
             }
           ]
@@ -158,29 +158,6 @@ export default defineConfig({
           root: {
             translations: {
               button: {
-                buttonText: '搜索',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                displayDetails: '显示详细列表',
-                resetButtonTitle: '重置搜索',
-                backButtonTitle: '关闭搜索',
-                noResultsText: '没有找到相关结果',
-                footer: {
-                  selectText: '选择',
-                  selectKeyAriaLabel: '输入',
-                  navigateText: '导航',
-                  navigateUpKeyAriaLabel: '上箭头',
-                  navigateDownKeyAriaLabel: '下箭头',
-                  closeText: '关闭',
-                  closeKeyAriaLabel: 'esc'
-                }
-              }
-            }
-          },
-          en: {
-            translations: {
-              button: {
                 buttonText: 'Search',
                 buttonAriaLabel: 'Search docs'
               },
@@ -196,6 +173,29 @@ export default defineConfig({
                   navigateUpKeyAriaLabel: 'Up arrow',
                   navigateDownKeyAriaLabel: 'Down arrow',
                   closeText: 'Close',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          },
+          zh_cn: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '重置搜索',
+                backButtonTitle: '关闭搜索',
+                noResultsText: '没有找到相关结果',
+                footer: {
+                  selectText: '选择',
+                  selectKeyAriaLabel: '输入',
+                  navigateText: '导航',
+                  navigateUpKeyAriaLabel: '上箭头',
+                  navigateDownKeyAriaLabel: '下箭头',
+                  closeText: '关闭',
                   closeKeyAriaLabel: 'esc'
                 }
               }
