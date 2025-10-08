@@ -39,7 +39,7 @@ Before you get started, please take time to carefully read the sections below an
 
 ### Important notes for users
 
-- Before installing or using HoYoShade, please read our [User Agreement](/en/user-agreement). If you do not fully accept the [User Agreement](/en/user-agreement), stop using HoYoShade immediately. Continuing to use HoYoShade will be considered acceptance of the [User Agreement](/en/user-agreement).
+- Before installing or using HoYoShade, please read our [User Agreement](/user-agreement). If you do not fully accept the [User Agreement](/user-agreement), stop using HoYoShade immediately. Continuing to use HoYoShade will be considered acceptance of the [User Agreement](/user-agreement).
   
 - If any content or terms in this User Agreement or this document conflict with the laws, regulations, or policies of your international or regional government, the laws, regulations, or policies of your international or regional government shall prevail.
 
@@ -92,8 +92,8 @@ To run HoYoShade, your device must meet the following minimum/recommended hardwa
 
 1. Download the latest version of HoYoShade.
 2. Choose the appropriate launcher installation method for your client:
-    - [Install using the miHoYo Launcher / HoYoPlay](/en/Tutorial/mihoyo-launcher)
-    - [Install using the Starward Launcher](/en/Tutorial/starward-launcher)
+    - [Install using the miHoYo Launcher / HoYoPlay](/Tutorial/mihoyo-launcher)
+    - [Install using the Starward Launcher](/Tutorial/starward-launcher)
 
 ## Need help?
 
