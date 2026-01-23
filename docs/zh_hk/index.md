@@ -33,3 +33,10 @@ features:
   - title: 🇭🇰自由，開放，始於香港
     details: 除非你主動向我們分享你的數據，或者你向我們提交了issues，否則我們絕對以任何信息向你索要任何形式的數據。同時，主要開發及維護工作均在香港完成。對於部分敏感操作，我們會與我們的合作夥伴進行合作，以確保我們的活動始終保持匿名。
 ---
+
+<div class="sponsor-section" style="text-align: center; margin-top: 24px;">
+  <h2>特別贊助</h2>
+  <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/cloudflare-logo.svg" alt="Cloudflare" style="height: 60px; margin: 0 auto;">
+  </a>
+</div>

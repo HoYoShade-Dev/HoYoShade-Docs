@@ -33,3 +33,10 @@ features:
   - title: 🇭🇰Free, Open, Born in Hong Kong
     details: Unless you actively share your data with us, or you submit issues to us, we will never ask you for any form of data in any way. At the same time, the main development and maintenance work is completed in Hong Kong. For some sensitive operations, we will cooperate with our partners to ensure that our activities always remain anonymous.
 ---
+
+<div class="sponsor-section" style="text-align: center; margin-top: 24px;">
+  <h2>Sponsored by</h2>
+  <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/cloudflare-logo.svg" alt="Cloudflare" style="height: 60px; margin: 0 auto;">
+  </a>
+</div>
