@@ -4,34 +4,34 @@ layout: home
 
 hero:
   name: "HoYoShade"
-  text: "負責任，可持續，全開源的ReShade解決方案。"
-  tagline: 首發搭載 ⌈幻港之蝶⌋ 注入內核。哈遊宇宙，One Core就夠！
+  text: "負責任，有雷氣，全開源嘅 ReShade 解決方案。"
+  tagline: 首發搭載 ⌈幻港之蝶⌋ 注入內核。米家全家桶，One Core 就搞掂！
   image:
     src: /HoYoShadeLOGOCorned.png
     alt: HoYoShade Logo
   actions:
     - theme: brand
-      text: 快速開始
+      text: 快速上手
       link: /zh_hk/quick-start
     - theme: alt
-      text: 項目地址
+      text: 專案 GitHub
       link: https://github.com/DuolaD/HoYoShade
     - theme: alt
-      text: 發行界面
+      text: Releases 發布頁
       link: https://github.com/DuolaD/HoYoShade/releases
     - theme: alt
-      text: ReShade官方網站
+      text: ReShade 官網
       link: https://reshade.me
 
 features:
-  - title: ♻️負責任，可持續，全開源
-    details: 持續更新維護，實時跟進上游ReShade源碼更新，一切只為您可以第一時間享受所有新特性。同時，HoYoShade所用到的框架均為100%開源，我們不會添加任何形式的後門，也不會以任何形式保存你的數據。你可以隨時自由審查所有源代碼，以確認我們說到做到。
-  - title: 🚀更通用，更易用，多聯動
-    details: 全新開發可靠，可量化，自適應注入器 ⌈幻港之蝶⌋，無需配置任何文件，只需啓動遊戲，即可完成既往所有繁瑣步驟，降低學習成本。同時，這也爲我們帶來了鏈式啓動的可能，無論使用何種Mod，你總能找到可以聯動HoYoShade啓動的方式。
-  - title: ⛓️‍💥可離線，抗封鎖，抗審查
-    details: 網絡連接要求始終為可選項。即使身處高壓環境，HoYoShade的絕大多數功能將始終可用。在某些國際網絡受限的國家及地區，HoYoShade將會提供可靠的本地下載方式，也提供了優於官方ReShade的可用性和可靠性。
-  - title: 🇭🇰自由，開放，始於香港
-    details: 除非你主動向我們分享你的數據，或者你向我們提交了issues，否則我們絕對以任何信息向你索要任何形式的數據。同時，主要開發及維護工作均在香港完成。對於部分敏感操作，我們會與我們的合作夥伴進行合作，以確保我們的活動始終保持匿名。
+  - title: ♻️ 負責任，有雷氣，全開源
+    details: 長期更新維護，貼緊上游 ReShade 源碼 update，務求等大家第一時間玩到最新功能。同時，HoYoShade 採用嘅 framework 100% 開源，絕不加任何後門，亦都絕對唔會偷留你嘅任何資料。你隨時可以自己去審查所有 source code，睇下我哋係咪講得出做得到。
+  - title: 🚀 超通用，易上手，玩聯動
+    details: 全新研發穩定、可量化、自適應嘅注入核心 ⌈幻港之蝶⌋，完全唔使自己改一堆 config file，開 Game 即用，慳返以前勁多煩人步驟，新手都識用。而且仲支援鏈式啟動，無論你用緊邊隻 Mod，都可以輕鬆搭埋 HoYoShade 一齊開。
+  - title: ⛓️‍💥 斷網照用，抗封鎖，無懼審查
+    details: 上網連線只係 optional。就算身處高壓網絡環境，HoYoShade 絕大部分功能都係正常用得。喺某啲國際網絡受限嘅地區，HoYoShade 仲會提供可靠嘅本地 download 渠道，保證好用同可靠過官方 ReShade。
+  - title: 🇭🇰 自由，開放，始於香港
+    details: 除非你主動 share 數據畀我哋或者喺 GitHub 開 issue，否則我哋絕不會以任何方式問你索取任何個人資料。本項目核心開發同維護工作全部喺香港搞掂。部分敏感操作仲會同合作夥伴一齊搞，確保成個過程保持匿名安全。
 ---
 
 <div class="sponsor-section" style="text-align: center; margin-top: 24px;">

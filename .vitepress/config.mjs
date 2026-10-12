@@ -23,6 +23,10 @@ export default defineConfig({
           window.location.replace('/zh_cn/' + searchAndHash);
           return;
         }
+        if (saved === 'zh_tw') {
+          window.location.replace('/zh_tw/' + searchAndHash);
+          return;
+        }
         if (saved === 'zh_hk') {
           window.location.replace('/zh_hk/' + searchAndHash);
           return;
@@ -35,14 +39,15 @@ export default defineConfig({
       var langs = navigator.languages || [navigator.language || ''];
       var primary = (langs[0] || '').toLowerCase();
 
-      // 繁体中文匹配：zh-hk, zh-tw, zh-mo, 或包含 hant (如 zh-hant-cn, zh-hant)
-      if (
-        primary.indexOf('zh-hk') !== -1 ||
-        primary.indexOf('zh-tw') !== -1 ||
-        primary.indexOf('zh-mo') !== -1 ||
-        primary.indexOf('hant') !== -1
-      ) {
+      // 香港/澳门繁体匹配：zh-hk, zh-mo
+      if (primary.indexOf('zh-hk') !== -1 || primary.indexOf('zh-mo') !== -1) {
         window.location.replace('/zh_hk/' + searchAndHash);
+        return;
+      }
+
+      // 台湾繁体及其他繁体匹配：zh-tw, 或包含 hant (如 zh-hant)
+      if (primary.indexOf('zh-tw') !== -1 || primary.indexOf('hant') !== -1) {
+        window.location.replace('/zh_tw/' + searchAndHash);
         return;
       }
 
@@ -173,9 +178,9 @@ export default defineConfig({
         }
       }
     },
-    'zh_hk': {
-      label: '繁體中文',
-      lang: 'zh-HK',
+    'zh_tw': {
+      label: '繁體中文 (台灣)',
+      lang: 'zh-TW',
       title: 'HoYoShade 文檔',
       description: 'HoYoShade官方文檔',
       themeConfig: {
@@ -184,26 +189,79 @@ export default defineConfig({
           copyright: 'Copyright © 2024-present 哆啦D夢 | DuolaD'
         },
         nav: [
+          { text: '首頁', link: '/zh_tw/' },
+          { text: '快速開始', link: '/zh_tw/quick-start' },
+          { text: '使用者協議', link: '/zh_tw/user-agreement' },
+          {
+            text: '教學與指南',
+            items: [
+              { text: '判斷客戶端類型', link: '/zh_tw/Tutorial/check-your-client' },
+              { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_tw/Tutorial/mihoyo-launcher' },
+              { text: '使用第三方啟動器 (Starward)', link: '/zh_tw/Tutorial/starward-launcher' },
+              { text: '防毒軟體排除設定', link: '/zh_tw/Tutorial/antivirus' },
+              { text: '常見問題與疑難排解', link: '/zh_tw/Tutorial/troubleshooting' }
+            ]
+          }
+        ],
+        sidebar: {
+          '/zh_tw/': [
+            {
+              text: '快速開始',
+              items: [
+                { text: '快速開始', link: '/zh_tw/quick-start' }
+              ]
+            },
+            {
+              text: '使用者協議',
+              items: [
+                { text: '使用者協議', link: '/zh_tw/user-agreement' }
+              ]
+            },
+            {
+              text: '教學與指南',
+              items: [
+                { text: '判斷客戶端類型', link: '/zh_tw/Tutorial/check-your-client' },
+                { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_tw/Tutorial/mihoyo-launcher' },
+                { text: '使用第三方啟動器 (Starward)', link: '/zh_tw/Tutorial/starward-launcher' },
+                { text: '防毒軟體排除設定', link: '/zh_tw/Tutorial/antivirus' },
+                { text: '常見問題與疑難排解', link: '/zh_tw/Tutorial/troubleshooting' }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    'zh_hk': {
+      label: '香港繁體 (粵語)',
+      lang: 'zh-HK',
+      title: 'HoYoShade 文檔',
+      description: 'HoYoShade官方文檔',
+      themeConfig: {
+        footer: {
+          message: '呢個項目並非 miHoYo / HoYoverse 官方項目，本項目同埋維護者維護嘅同系列衍生項目都同 miHoYo / HoYoverse 冇任何經濟或隸屬關係。相關遊戲商標同埋內容版權全部歸原權利人所有。<br>若要睇 miHoYo / HoYoverse 最新動態同埋官方項目，請去 <a href="https://www.mihoyo.com/" target="_blank" rel="noopener noreferrer">miHoYo (中國大陸)</a> 或者 <a href="https://www.hoyoverse.com/" target="_blank" rel="noopener noreferrer">HoYoverse (全球)</a> 了解更多資訊。',
+          copyright: 'Copyright © 2024-present 哆啦D夢 | DuolaD'
+        },
+        nav: [
           { text: '首頁', link: '/zh_hk/' },
-          { text: '快速開始', link: '/zh_hk/quick-start' },
+          { text: '快速上手', link: '/zh_hk/quick-start' },
           { text: '用戶協議', link: '/zh_hk/user-agreement' },
           {
             text: '教學與指南',
             items: [
-              { text: '判斷客戶端類型', link: '/zh_hk/Tutorial/check-your-client' },
-              { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
-              { text: '使用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
-              { text: '防毒軟體排除設定', link: '/zh_hk/Tutorial/antivirus' },
-              { text: '常見問題與疑難排解', link: '/zh_hk/Tutorial/troubleshooting' }
+              { text: '分清客戶端版本', link: '/zh_hk/Tutorial/check-your-client' },
+              { text: '用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+              { text: '用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
+              { text: '防毒軟件加白名單', link: '/zh_hk/Tutorial/antivirus' },
+              { text: '常見問題與解決方法', link: '/zh_hk/Tutorial/troubleshooting' }
             ]
           }
         ],
         sidebar: {
           '/zh_hk/': [
             {
-              text: '快速開始',
+              text: '快速上手',
               items: [
-                { text: '快速開始', link: '/zh_hk/quick-start' }
+                { text: '快速上手', link: '/zh_hk/quick-start' }
               ]
             },
             {
@@ -215,11 +273,11 @@ export default defineConfig({
             {
               text: '教學與指南',
               items: [
-                { text: '判斷客戶端類型', link: '/zh_hk/Tutorial/check-your-client' },
-                { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
-                { text: '使用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
-                { text: '防毒軟體排除設定', link: '/zh_hk/Tutorial/antivirus' },
-                { text: '常見問題與疑難排解', link: '/zh_hk/Tutorial/troubleshooting' }
+                { text: '分清客戶端版本', link: '/zh_hk/Tutorial/check-your-client' },
+                { text: '用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+                { text: '用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
+                { text: '防毒軟件加白名單', link: '/zh_hk/Tutorial/antivirus' },
+                { text: '常見問題與解決方法', link: '/zh_hk/Tutorial/troubleshooting' }
               ]
             }
           ]
@@ -280,7 +338,7 @@ export default defineConfig({
               }
             }
           },
-          zh_hk: {
+          zh_tw: {
             translations: {
               button: {
                 buttonText: '搜尋',
@@ -288,7 +346,7 @@ export default defineConfig({
               },
               modal: {
                 displayDetails: '顯示詳細列表',
-                resetButtonTitle: '重置搜尋',
+                resetButtonTitle: '重設搜尋',
                 backButtonTitle: '關閉搜尋',
                 noResultsText: '沒有找到相關結果',
                 footer: {
@@ -298,6 +356,29 @@ export default defineConfig({
                   navigateUpKeyAriaLabel: '上箭頭',
                   navigateDownKeyAriaLabel: '下箭頭',
                   closeText: '關閉',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          },
+          zh_hk: {
+            translations: {
+              button: {
+                buttonText: '搵嘢 / 搜尋',
+                buttonAriaLabel: '搜尋文檔'
+              },
+              modal: {
+                displayDetails: '顯示詳細清單',
+                resetButtonTitle: 'Reset 搜尋',
+                backButtonTitle: '閂咗佢',
+                noResultsText: '搵唔到相關結果',
+                footer: {
+                  selectText: '揀選',
+                  selectKeyAriaLabel: 'Enter 掣',
+                  navigateText: '左右上落',
+                  navigateUpKeyAriaLabel: '向上掣',
+                  navigateDownKeyAriaLabel: '向下掣',
+                  closeText: '閂閉',
                   closeKeyAriaLabel: 'esc'
                 }
               }

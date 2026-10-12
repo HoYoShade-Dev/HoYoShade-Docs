@@ -42,7 +42,17 @@ export default {
           ) {
             targetLang = 'zh_cn';
           } else if (
-            text.includes('繁體中文') ||
+            text.includes('台灣') ||
+            text.includes('台湾') ||
+            path.includes('/zh_tw/') ||
+            path.endsWith('/zh_tw') ||
+            path === '/zh_tw'
+          ) {
+            targetLang = 'zh_tw';
+          } else if (
+            text.includes('香港') ||
+            text.includes('粵語') ||
+            text.includes('粤语') ||
             path.includes('/zh_hk/') ||
             path.endsWith('/zh_hk') ||
             path === '/zh_hk'

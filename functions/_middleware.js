@@ -12,6 +12,9 @@ export async function onRequest(context) {
       if (preferred === 'zh_cn') {
         return Response.redirect(new URL('/zh_cn/' + url.search + url.hash, url), 302);
       }
+      if (preferred === 'zh_tw') {
+        return Response.redirect(new URL('/zh_tw/' + url.search + url.hash, url), 302);
+      }
       if (preferred === 'zh_hk') {
         return Response.redirect(new URL('/zh_hk/' + url.search + url.hash, url), 302);
       }
@@ -23,9 +26,14 @@ export async function onRequest(context) {
     // 2. 用户未手动选择过，检测浏览器发来的 Accept-Language 请求头
     const acceptLang = (request.headers.get('Accept-Language') || '').toLowerCase();
 
-    // 繁体中文匹配 (港澳台/繁体字符集)
-    if (/zh-(hk|tw|mo)|hant/.test(acceptLang)) {
+    // 香港/澳门繁体匹配
+    if (/zh-(hk|mo)/.test(acceptLang)) {
       return Response.redirect(new URL('/zh_hk/' + url.search + url.hash, url), 302);
+    }
+
+    // 台湾繁体及通用繁体匹配
+    if (/zh-tw|hant/.test(acceptLang)) {
+      return Response.redirect(new URL('/zh_tw/' + url.search + url.hash, url), 302);
     }
 
     // 简体中文及其他中文匹配
