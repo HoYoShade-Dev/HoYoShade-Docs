@@ -1,93 +1,52 @@
-# 在Starward啟動器安裝HoYoShade
+# 在 Starward 啟動器中使用 HoYoShade
 
-本教程將指導您如何在Starward第三方啟動器中安裝和配置HoYoShade。
+[Starward](https://github.com/Scighost/Starward) 是一款開源的第三方米哈遊遊戲啟動器。本指南介紹如何在由 Starward 管理的遊戲客戶端中配合使用 HoYoShade。
 
-## 關於Starward
+## 準備工作
 
-Starward是一個開源的第三方米哈遊遊戲啟動器，提供了更多的自訂選項和功能。
+1. 確認 Starward 中已正確關聯或安裝目標遊戲，且遊戲可以離線獨立啟動。
+2. 確保在操作前遊戲進程已完全退出。
+3. 下載並解壓縮 HoYoShade 發行包，建議提前完成 [防毒軟體排除設定](/zh_hk/Tutorial/antivirus)。
 
-## 前置要求
+## 具體操作步驟
 
-- 已安裝Starward啟動器
-- 已通過Starward安裝支援的米哈遊遊戲
-- 管理員權限
+### 第一步：在 Starward 中獲取遊戲主程序目錄
 
-## 安裝步驟
+1. 打開 Starward 啟動器，並在左側導覽列選擇你要增強畫質的遊戲。
+2. 找到主介面底部的「開始遊戲」按鈕，點擊其右側的**齒輪圖示（遊戲設定）**。
+3. 在設定面板中即可查看「遊戲安裝目錄」。點擊該路徑旁邊的資料夾圖示，系統資源管理器將直接跳轉至該目錄。
+4. 確認目錄中存在主程序執行檔（如 `YuanShen.exe`、`GenshinImpact.exe`、`StarRail.exe` 或 `ZenlessZoneZero.exe`）。
 
-### 1. 準備工作
+### 第二步：放置 `ReShade.ini` 設定檔
 
-1. 確保Starward啟動器已正確安裝遊戲
-2. 關閉所有正在執行的遊戲程序
-3. 下載最新版本的HoYoShade
+1. 打開解壓縮後的 HoYoShade 資料夾，運行 HoYoShade 啟動器生成 `ReShade.ini`。
+2. 將該 `ReShade.ini` 複製並貼上至第一步中打開的遊戲主程序根目錄。
 
-### 2. 在Starward中定位遊戲
+### 第三步：運行 HoYoShade 注入器
 
-1. 打開Starward啟動器
-2. 選擇要安裝HoYoShade的遊戲
-3. 點擊遊戲設定或屬性
-4. 查看並記錄遊戲安裝路徑
+1. 在 HoYoShade 啟动器中輸入目標遊戲對應的序號。
+2. 注入器進入監聽狀態，控制台提示：
+   ```text
+   Waiting for a '...' process to start ...
+   ```
+3. 保持控制台在背景運行。
 
-### 3. 安裝HoYoShade
+### 第四步：從 Starward 啟動遊戲
 
-1. 以管理員身份執行HoYoShade安裝程式
-2. 選擇「自訂安裝」模式
-3. 手動指定Starward管理的遊戲目錄
-4. 確認安裝路徑正確後開始安裝
+1. 回到 Starward 介面，點擊**開始遊戲**。
+2. 遊戲進程被啟動後，HoYoShade 注入器會自動檢測到進程並執行掛載，提示 `Injecting HoYoShade ... Succeeded!` 後自動關閉控制台。
+3. 遊戲內螢幕頂端載入著色器，加載完畢後按 <kbd>Home</kbd> 鍵即可打開調色設定選單。
 
-### 4. Starward特殊配置
+## Starward 特性與相容性說明
 
-1. 在Starward中找到遊戲的啟動選項
-2. 確保啟動參數不會與HoYoShade衝突
-3. 如有必要，調整Starward的相容性設定
+### 1. 與 Starward 內建 FPS 解鎖功能的相容性
+Starward 提供了針對部分遊戲的影格率解鎖功能。HoYoShade 與該功能完全相容：
+- FPS 解鎖機制主要透過記憶體補丁調節引擎渲染時脈上限；
+- HoYoShade 作用於 DirectX 圖形後處理渲染管線；
+- 兩者工作在不同的模組層級，同時使用不會產生衝突。但需注意在使用 FPS 解鎖器時，勿在遊戲內設定中隨意切換影格率選項。
 
-### 5. 測試安裝
+### 2. 自訂啟動參數支援
+若在 Starward 中為遊戲配置了視窗化啟動參數（如 `-popupwindow`、`-screen-fullscreen 0`），HoYoShade 的注入邏輯不受任何影響。
 
-1. 通過Starward啟動遊戲
-2. 按下`Home`鍵驗證HoYoShade是否正常工作
-3. 調整圖形設定並儲存配置
-
-## Starward特有優勢
-
-- **更好的檔案管理**：Starward提供更詳細的檔案管理功能
-- **啟動參數控制**：可以精確控制遊戲啟動參數
-- **多版本支援**：支援同時管理多個遊戲版本
-
-## 常見問題
-
-### Q: Starward啟動的遊戲無法載入HoYoShade？
-A: 檢查Starward的啟動參數設定，確保沒有禁用DLL注入。
-
-### Q: 如何在Starward中管理HoYoShade配置？
-A: 可以在Starward的工具選單中新增HoYoShade配置工具的捷徑。
-
-### Q: Starward更新後HoYoShade失效？
-A: Starward更新通常不會影響HoYoShade，但建議檢查遊戲路徑是否發生變化。
-
-## 進階配置
-
-### 自訂啟動腳本
-
-您可以在Starward中建立自訂啟動腳本來：
-- 自動備份HoYoShade配置
-- 在遊戲啟動前檢查HoYoShade狀態
-- 實現配置檔案的快速切換
-
-### 配置檔案管理
-
-利用Starward的檔案管理功能：
-1. 建立多個HoYoShade配置預設
-2. 根據不同遊戲場景快速切換
-3. 備份和恢復配置檔案
-
-## 注意事項
-
-- Starward作為第三方啟動器，請確保從官方渠道下載
-- 某些遊戲更新可能需要重新配置啟動參數
-- 建議定期備份遊戲和HoYoShade配置
-
-## 技術支援
-
-如果遇到Starward相關的問題：
-1. 查看Starward官方文檔
-2. 訪問Starward社群
-3. 聯繫HoYoShade技術支援獲取相容性幫助
+### 3. 多區服切換注意事項
+Starward 支援快速切換不同區服的客戶端（例如從國服切換至國際服）。若在 Starward 中切換了區服，需確認 HoYoShade 注入器中選擇的目標客戶端同步更新（例如國服原神對應 `YuanShen.exe`，國際服對應 `GenshinImpact.exe`），否則注入器將無法捕獲到進程。

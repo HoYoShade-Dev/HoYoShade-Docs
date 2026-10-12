@@ -84,9 +84,11 @@ export default defineConfig({
           {
             text: 'Tutorials',
             items: [
-              { text: 'Check your miHoYo/HoYoverse Client', link: '/Tutorial/check-your-client' },
-              { text: 'Install HoYoShade with miHoYo Launcher', link: '/Tutorial/mihoyo-launcher' },
-              { text: 'Install HoYoShade with Starward Launcher', link: '/Tutorial/starward-launcher' }
+              { text: 'Check your Client Type', link: '/Tutorial/check-your-client' },
+              { text: 'Install with HoYoPlay Launcher', link: '/Tutorial/mihoyo-launcher' },
+              { text: 'Install with Starward Launcher', link: '/Tutorial/starward-launcher' },
+              { text: 'Antivirus Exclusions', link: '/Tutorial/antivirus' },
+              { text: 'Troubleshooting & FAQ', link: '/Tutorial/troubleshooting' }
             ]
           }
         ],
@@ -107,9 +109,11 @@ export default defineConfig({
             {
               text: 'Tutorials',
               items: [
-                { text: 'Check your miHoYo/HoYoverse Client', link: '/Tutorial/check-your-client' },
-                { text: 'Install HoYoShade with miHoYo Launcher', link: '/Tutorial/mihoyo-launcher' },
-                { text: 'Install HoYoShade with Starward Launcher', link: '/Tutorial/starward-launcher' }
+                { text: 'Check your Client Type', link: '/Tutorial/check-your-client' },
+                { text: 'Install with HoYoPlay Launcher', link: '/Tutorial/mihoyo-launcher' },
+                { text: 'Install with Starward Launcher', link: '/Tutorial/starward-launcher' },
+                { text: 'Antivirus Exclusions', link: '/Tutorial/antivirus' },
+                { text: 'Troubleshooting & FAQ', link: '/Tutorial/troubleshooting' }
               ]
             }
           ]
@@ -131,11 +135,13 @@ export default defineConfig({
           { text: '快速开始', link: '/zh_cn/quick-start' },
           { text: '用户协议', link: '/zh_cn/user-agreement' },
           {
-            text: '教程',
+            text: '教程与指南',
             items: [
-              { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/zh_cn/Tutorial/check-your-client' },
-              { text: '使用米哈游启动器安装HoYoShade', link: '/zh_cn/Tutorial/mihoyo-launcher' },
-              { text: '在Starward启动器安装HoYoShade', link: '/zh_cn/Tutorial/starward-launcher' }
+              { text: '判断客户端类型', link: '/zh_cn/Tutorial/check-your-client' },
+              { text: '使用官方启动器 (HoYoPlay)', link: '/zh_cn/Tutorial/mihoyo-launcher' },
+              { text: '使用第三方启动器 (Starward)', link: '/zh_cn/Tutorial/starward-launcher' },
+              { text: '杀毒软件排除设置', link: '/zh_cn/Tutorial/antivirus' },
+              { text: '常见问题与排错', link: '/zh_cn/Tutorial/troubleshooting' }
             ]
           }
         ],
@@ -154,11 +160,13 @@ export default defineConfig({
               ]
             },
             {
-              text: '教程',
+              text: '教程与指南',
               items: [
-                { text: '判断你正在使用的 miHoYo（米哈游）/HoYoverse 客户端', link: '/zh_cn/Tutorial/check-your-client' },
-                { text: '使用米哈游启动器安装HoYoShade', link: '/zh_cn/Tutorial/mihoyo-launcher' },
-                { text: '在Starward启动器安装HoYoShade', link: '/zh_cn/Tutorial/starward-launcher' }
+                { text: '判断客户端类型', link: '/zh_cn/Tutorial/check-your-client' },
+                { text: '使用官方启动器 (HoYoPlay)', link: '/zh_cn/Tutorial/mihoyo-launcher' },
+                { text: '使用第三方启动器 (Starward)', link: '/zh_cn/Tutorial/starward-launcher' },
+                { text: '杀毒软件排除设置', link: '/zh_cn/Tutorial/antivirus' },
+                { text: '常见问题与排错', link: '/zh_cn/Tutorial/troubleshooting' }
               ]
             }
           ]
@@ -180,11 +188,13 @@ export default defineConfig({
           { text: '快速開始', link: '/zh_hk/quick-start' },
           { text: '用戶協議', link: '/zh_hk/user-agreement' },
           {
-            text: '教程',
+            text: '教學與指南',
             items: [
-              { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/Tutorial/check-your-client' },
-              { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/mihoyo-launcher' },
-              { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/starward-launcher' }
+              { text: '判斷客戶端類型', link: '/zh_hk/Tutorial/check-your-client' },
+              { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+              { text: '使用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
+              { text: '防毒軟體排除設定', link: '/zh_hk/Tutorial/antivirus' },
+              { text: '常見問題與疑難排解', link: '/zh_hk/Tutorial/troubleshooting' }
             ]
           }
         ],
@@ -203,11 +213,13 @@ export default defineConfig({
               ]
             },
             {
-              text: '教程',
+              text: '教學與指南',
               items: [
-                { text: '判斷你正在使用的 miHoYo（米哈遊）/HoYoverse 客戶端', link: '/zh_hk/Tutorial/check-your-client' },
-                { text: '使用米哈游啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/mihoyo-launcher' },
-                { text: '在Starward啟動器安裝HoYoShade', link: '/zh_hk/Tutorial/starward-launcher' }
+                { text: '判斷客戶端類型', link: '/zh_hk/Tutorial/check-your-client' },
+                { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
+                { text: '使用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
+                { text: '防毒軟體排除設定', link: '/zh_hk/Tutorial/antivirus' },
+                { text: '常見問題與疑難排解', link: '/zh_hk/Tutorial/troubleshooting' }
               ]
             }
           ]

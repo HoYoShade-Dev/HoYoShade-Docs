@@ -1,93 +1,52 @@
-# Install HoYoShade with Starward Launcher
+# Install with Starward Launcher
 
-This tutorial will guide you through installing and configuring HoYoShade with the Starward third-party launcher.
-
-## About Starward
-
-Starward is an open-source third-party launcher for miHoYo games, offering more customization options and features.
+[Starward](https://github.com/Scighost/Starward) is an open-source launcher for miHoYo games. This guide explains how to use HoYoShade with games managed by Starward.
 
 ## Prerequisites
 
-- Starward launcher installed
-- Supported miHoYo games installed through Starward
-- Administrator privileges
+1. Ensure the game is linked or installed in Starward and launches properly on its own.
+2. Close the game completely before starting.
+3. Extract HoYoShade to a dedicated directory and configure [Antivirus Exclusions](/Tutorial/antivirus).
 
-## Installation Steps
+## Step-by-Step Instructions
 
-### 1. Preparation
+### Step 1: Locate the Game Directory in Starward
 
-1. Ensure Starward launcher has properly installed games
-2. Close all running game processes
-3. Download the latest version of HoYoShade
+1. Open Starward and select the target game on the left navigation bar.
+2. Next to the "Start Game" button at the bottom, click the **gear icon (Game Settings)**.
+3. Find the game installation directory path and click the folder icon next to it to open the directory in File Explorer.
+4. Verify that the main executable is present in this folder (such as `YuanShen.exe`, `GenshinImpact.exe`, `StarRail.exe`, or `ZenlessZoneZero.exe`).
 
-### 2. Locate Game in Starward
+### Step 2: Deploy `ReShade.ini`
 
-1. Open Starward launcher
-2. Select the game you want to install HoYoShade for
-3. Click game settings or properties
-4. View and note the game installation path
+1. In the extracted HoYoShade folder, launch the HoYoShade program to generate `ReShade.ini`.
+2. Copy `ReShade.ini` and paste it into the game directory opened in Step 1.
 
-### 3. Install HoYoShade
+### Step 3: Run the HoYoShade Injector
 
-1. Run HoYoShade installer as administrator
-2. Select "Custom Installation" mode
-3. Manually specify the game directory managed by Starward
-4. Confirm the installation path is correct and begin installation
+1. In the HoYoShade console, enter the number matching your target game and region.
+2. The injector enters a waiting state:
+   ```text
+   Waiting for a '...' process to start ...
+   ```
+3. Leave this console window open in the background.
 
-### 4. Starward-Specific Configuration
+### Step 4: Launch the Game from Starward
 
-1. Find the game launch options in Starward
-2. Ensure launch parameters don't conflict with HoYoShade
-3. Adjust Starward compatibility settings if necessary
+1. Return to Starward and click **Start Game**.
+2. The injector detects the game process and injects the runtime DLL, printing `Injecting HoYoShade ... Succeeded!` before closing itself.
+3. The ReShade banner appears across the top of the game screen. Once loading finishes, press <kbd>Home</kbd> to open the preset menu.
 
-### 5. Test Installation
+## Starward Features and Compatibility Notes
 
-1. Launch the game through Starward
-2. Press `Home` key to verify HoYoShade is working properly
-3. Adjust graphics settings and save configuration
+### 1. Built-in FPS Unlocker Compatibility
+Starward offers an optional frame rate unlocking feature for several games. HoYoShade works alongside this feature without conflicts:
+- The FPS unlocker modifies engine frame limiters in process memory.
+- HoYoShade hooks into the DirectX graphics post-processing pipeline.
+- Both tools operate on different layers. When using an FPS unlocker, avoid changing frame rate settings within the game's native graphics settings menu.
 
-## Starward-Specific Advantages
+### 2. Custom Launch Arguments
+Configuring custom launch parameters in Starward (such as `-popupwindow` or `-screen-fullscreen 0`) does not interfere with the injection process.
 
-- **Better File Management**: Starward provides more detailed file management features
-- **Launch Parameter Control**: Precise control over game launch parameters
-- **Multi-Version Support**: Supports managing multiple game versions simultaneously
-
-## Common Issues
-
-### Q: Game launched through Starward can't load HoYoShade?
-A: Check Starward's launch parameter settings, ensure DLL injection is not disabled.
-
-### Q: How to manage HoYoShade configuration in Starward?
-A: You can add HoYoShade configuration tool shortcuts in Starward's tools menu.
-
-### Q: HoYoShade stops working after Starward update?
-A: Starward updates usually don't affect HoYoShade, but check if game paths have changed.
-
-## Advanced Configuration
-
-### Custom Launch Scripts
-
-You can create custom launch scripts in Starward to:
-- Automatically backup HoYoShade configurations
-- Check HoYoShade status before game launch
-- Enable quick configuration switching
-
-### Configuration File Management
-
-Using Starward's file management features:
-1. Create multiple HoYoShade configuration presets
-2. Quick switching based on different game scenarios
-3. Backup and restore configuration files
-
-## Important Notes
-
-- Starward is a third-party launcher, ensure you download from official sources
-- Some game updates may require reconfiguring launch parameters
-- Recommend regular backups of game and HoYoShade configurations
-
-## Technical Support
-
-For Starward-related issues:
-1. Check Starward official documentation
-2. Visit Starward community
-3. Contact HoYoShade technical support for compatibility help
+### 3. Server Region Switching
+Starward allows users to switch between server regions (such as moving between Mainland China and Global clients). When switching regions, choose the corresponding client in the HoYoShade injector menu (for example, `YuanShen.exe` for Mainland China and `GenshinImpact.exe` for Global), or the injector will not detect the process.
