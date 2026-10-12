@@ -26,17 +26,12 @@ export async function onRequest(context) {
     // 2. 用户未手动选择过，检测浏览器发来的 Accept-Language 请求头
     const acceptLang = (request.headers.get('Accept-Language') || '').toLowerCase();
 
-    // 香港/澳门繁体匹配
-    if (/zh-(hk|mo)/.test(acceptLang)) {
-      return Response.redirect(new URL('/zh_hk/' + url.search + url.hash, url), 302);
+    // 若检测为繁体中文（无论台湾、香港、澳门或通用繁体），服务端不强制跳转，放行至前端弹窗让用户自由选择
+    if (/zh-(hk|tw|mo)|hant/.test(acceptLang)) {
+      return next();
     }
 
-    // 台湾繁体及通用繁体匹配
-    if (/zh-tw|hant/.test(acceptLang)) {
-      return Response.redirect(new URL('/zh_tw/' + url.search + url.hash, url), 302);
-    }
-
-    // 简体中文及其他中文匹配
+    // 简体中文及其他中文匹配：直接重定向至 zh_cn
     if (acceptLang.startsWith('zh') || /zh-cn|zh-sg|hans/.test(acceptLang)) {
       return Response.redirect(new URL('/zh_cn/' + url.search + url.hash, url), 302);
     }

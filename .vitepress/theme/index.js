@@ -1,6 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import DocFooterDisclaimer from './DocFooterDisclaimer.vue'
+import TraditionalChineseModal from './TraditionalChineseModal.vue'
 import './style.css'
 
 /** @type {import('vitepress').Theme} */
@@ -16,7 +17,9 @@ export default {
         class: 'custom-logo'
       }),
       // 在文档页面底部添加全局免责声明
-      'doc-after': () => h(DocFooterDisclaimer)
+      'doc-after': () => h(DocFooterDisclaimer),
+      // 繁体中文选择引导弹窗（当首次访问且检测到繁体中文时弹出）
+      'layout-bottom': () => h(TraditionalChineseModal)
     })
   },
   enhanceApp({ app, router, siteData }) {

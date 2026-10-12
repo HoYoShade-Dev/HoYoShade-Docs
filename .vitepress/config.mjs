@@ -37,21 +37,32 @@ export default defineConfig({
 
       // 2. 若用户从未手动选择，检测系统/浏览器首选语言
       var langs = navigator.languages || [navigator.language || ''];
-      var primary = (langs[0] || '').toLowerCase();
+      var isTraditional = false;
 
-      // 香港/澳门繁体匹配：zh-hk, zh-mo
-      if (primary.indexOf('zh-hk') !== -1 || primary.indexOf('zh-mo') !== -1) {
-        window.location.replace('/zh_hk/' + searchAndHash);
-        return;
+      for (var i = 0; i < langs.length; i++) {
+        var l = (langs[i] || '').toLowerCase();
+        if (
+          l.indexOf('zh-hk') !== -1 ||
+          l.indexOf('zh-tw') !== -1 ||
+          l.indexOf('zh-mo') !== -1 ||
+          l.indexOf('hant') !== -1
+        ) {
+          isTraditional = true;
+          break;
+        }
+        // 若首选语言是简体中文（zh-cn、zh-sg、zh-hans），直接认定为简体
+        if (i === 0 && (l.indexOf('zh-cn') !== -1 || l.indexOf('zh-sg') !== -1 || l.indexOf('hans') !== -1)) {
+          break;
+        }
       }
 
-      // 台湾繁体及其他繁体匹配：zh-tw, 或包含 hant (如 zh-hant)
-      if (primary.indexOf('zh-tw') !== -1 || primary.indexOf('hant') !== -1) {
-        window.location.replace('/zh_tw/' + searchAndHash);
+      // 繁体中文用户：不自动强制跳转，停留在首页交由 TraditionalChineseModal 弹窗询问
+      if (isTraditional) {
         return;
       }
 
       // 简体中文及其他中文匹配：以 zh 开头（如 zh-cn, zh-sg, zh-hans, zh 等）
+      var primary = (langs[0] || '').toLowerCase();
       if (primary.indexOf('zh') === 0) {
         window.location.replace('/zh_cn/' + searchAndHash);
         return;
