@@ -18,6 +18,10 @@ export default defineConfig({
       title: 'HoYoShade Docs',
       description: 'Official HoYoShade Documentation',
       themeConfig: {
+        footer: {
+          message: 'This project is not an official miHoYo / HoYoverse project. Neither this project nor its derivative projects maintained by the maintainer have any economic or affiliated relationship with miHoYo / HoYoverse. All game trademarks and copyrights belong to their respective owners.<br>To check the latest updates and official projects from miHoYo / HoYoverse, please visit <a href="https://www.mihoyo.com/" target="_blank" rel="noopener noreferrer">miHoYo (Mainland China)</a> or <a href="https://www.hoyoverse.com/" target="_blank" rel="noopener noreferrer">HoYoverse (Global)</a> for more information.',
+          copyright: 'Copyright © 2024-present DuolaD'
+        },
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Quick Start', link: '/quick-start' },
@@ -63,6 +67,10 @@ export default defineConfig({
       title: 'HoYoShade 文档',
       description: 'HoYoShade官方文档',
       themeConfig: {
+        footer: {
+          message: '此项目并非 miHoYo / HoYoverse 官方项目，本项目及本项目维护者维护的同系列衍生项目也与 miHoYo / HoYoverse 无任何经济/隶属关系。相关游戏商标与内容版权均归原权利人所有。<br>若要查看 miHoYo / HoYoverse 最新动态及官方项目，请前往 <a href="https://www.mihoyo.com/" target="_blank" rel="noopener noreferrer">miHoYo (中国大陆)</a> 或 <a href="https://www.hoyoverse.com/" target="_blank" rel="noopener noreferrer">HoYoverse (全球)</a> 了解更多资讯。',
+          copyright: 'Copyright © 2024-present 哆啦D夢 | DuolaD'
+        },
         nav: [
           { text: '首页', link: '/zh_cn/' },
           { text: '快速开始', link: '/zh_cn/quick-start' },
@@ -108,6 +116,10 @@ export default defineConfig({
       title: 'HoYoShade 文檔',
       description: 'HoYoShade官方文檔',
       themeConfig: {
+        footer: {
+          message: '此項目並非 miHoYo / HoYoverse 官方項目，本項目及本項目維護者維護的同系列衍生項目也與 miHoYo / HoYoverse 無任何經濟/隸屬關係。相關遊戲商標與內容版權均歸原權利人所有。<br>若要查看 miHoYo / HoYoverse 最新動態及官方項目，請前往 <a href="https://www.mihoyo.com/" target="_blank" rel="noopener noreferrer">miHoYo (中國大陸)</a> 或 <a href="https://www.hoyoverse.com/" target="_blank" rel="noopener noreferrer">HoYoverse (全球)</a> 了解更多資訊。',
+          copyright: 'Copyright © 2024-present 哆啦D夢 | DuolaD'
+        },
         nav: [
           { text: '首頁', link: '/zh_hk/' },
           { text: '快速開始', link: '/zh_hk/quick-start' },
@@ -229,6 +241,10 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DuolaD/HoYoShade' }
-    ]
+    ],
+    footer: {
+      message: 'This project is not an official miHoYo / HoYoverse project. Neither this project nor its derivative projects maintained by the maintainer have any economic or affiliated relationship with miHoYo / HoYoverse. All game trademarks and copyrights belong to their respective owners.<br>To check the latest updates and official projects from miHoYo / HoYoverse, please visit <a href="https://www.mihoyo.com/" target="_blank" rel="noopener noreferrer">miHoYo (Mainland China)</a> or <a href="https://www.hoyoverse.com/" target="_blank" rel="noopener noreferrer">HoYoverse (Global)</a> for more information.',
+      copyright: 'Copyright © 2024-present DuolaD'
+    }
   }
 })

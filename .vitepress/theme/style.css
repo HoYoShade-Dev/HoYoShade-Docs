@@ -180,3 +180,23 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Component: Global Footer & Disclaimer
+ * -------------------------------------------------------------------------- */
+.VPFooter .message {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.VPFooter a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.25s;
+}
+
+.VPFooter a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+
