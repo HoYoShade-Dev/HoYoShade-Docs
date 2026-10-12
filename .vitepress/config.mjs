@@ -3,7 +3,62 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "HoYoShade Docs",
-  head: [["link", { rel: "icon", href: "/HoYoShadeLOGOCorned.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/HoYoShadeLOGOCorned.png" }],
+    [
+      "script",
+      { id: "check-lang" },
+      `
+(function() {
+  try {
+    var pathname = window.location.pathname;
+    // 仅在根路径（首页）触发重定向
+    if (pathname === '/' || pathname === '/index.html') {
+      var saved = localStorage.getItem('hoyoshade_lang');
+      var searchAndHash = window.location.search + window.location.hash;
+
+      // 1. 若用户已有手动偏好，严格遵守用户选择
+      if (saved) {
+        if (saved === 'zh_cn') {
+          window.location.replace('/zh_cn/' + searchAndHash);
+          return;
+        }
+        if (saved === 'zh_hk') {
+          window.location.replace('/zh_hk/' + searchAndHash);
+          return;
+        }
+        // 若 saved === 'en'，留在当前英文首页，不跳转
+        return;
+      }
+
+      // 2. 若用户从未手动选择，检测系统/浏览器首选语言
+      var langs = navigator.languages || [navigator.language || ''];
+      var primary = (langs[0] || '').toLowerCase();
+
+      // 繁体中文匹配：zh-hk, zh-tw, zh-mo, 或包含 hant (如 zh-hant-cn, zh-hant)
+      if (
+        primary.indexOf('zh-hk') !== -1 ||
+        primary.indexOf('zh-tw') !== -1 ||
+        primary.indexOf('zh-mo') !== -1 ||
+        primary.indexOf('hant') !== -1
+      ) {
+        window.location.replace('/zh_hk/' + searchAndHash);
+        return;
+      }
+
+      // 简体中文及其他中文匹配：以 zh 开头（如 zh-cn, zh-sg, zh-hans, zh 等）
+      if (primary.indexOf('zh') === 0) {
+        window.location.replace('/zh_cn/' + searchAndHash);
+        return;
+      }
+
+      // 其它语言默认保留英文首页
+    }
+  } catch (e) {}
+})();
+      `.trim()
+    ]
+  ],
   description: "HoYoShade官方文档",
   srcDir: 'docs',
   

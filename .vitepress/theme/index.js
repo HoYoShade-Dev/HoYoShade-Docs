@@ -20,6 +20,45 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    if (typeof window !== 'undefined') {
+      // 监听用户点击导航栏语言切换选项，保存其手动选择的偏好
+      document.addEventListener(
+        'click',
+        (e) => {
+          const link = e.target.closest(
+            '.VPNavBarTranslations a, .VPNavScreenTranslations a, .VPNavBarExtra .translations a, [class*="Translations"] a, .translations a'
+          );
+          if (!link) return;
+
+          const text = (link.textContent || '').trim();
+          const path = (link.pathname || link.getAttribute('href') || '').toLowerCase();
+          let targetLang = 'en';
+
+          if (
+            text.includes('简体中文') ||
+            path.includes('/zh_cn/') ||
+            path.endsWith('/zh_cn') ||
+            path === '/zh_cn'
+          ) {
+            targetLang = 'zh_cn';
+          } else if (
+            text.includes('繁體中文') ||
+            path.includes('/zh_hk/') ||
+            path.endsWith('/zh_hk') ||
+            path === '/zh_hk'
+          ) {
+            targetLang = 'zh_hk';
+          } else {
+            targetLang = 'en';
+          }
+
+          try {
+            localStorage.setItem('hoyoshade_lang', targetLang);
+            document.cookie = `hoyoshade_lang=${targetLang}; path=/; max-age=31536000; SameSite=Lax`;
+          } catch (err) {}
+        },
+        true
+      );
+    }
   }
 }
