@@ -43,5 +43,6 @@ Review the following before using HoYoShade:
    Start the game through your official launcher or Starward. A ReShade status bar will appear at the top of the screen during launch. Once in game, press the <kbd>Home</kbd> key to open the overlay and pick a preset.
 
 For step-by-step instructions with specific launchers, refer to:
+- [Use HoYoShade Hub Launcher (Recommended)](/Tutorial/hoyoshade-hub)
 - [Install with HoYoPlay Launcher](/Tutorial/mihoyo-launcher)
 - [Install with Starward Launcher](/Tutorial/starward-launcher)

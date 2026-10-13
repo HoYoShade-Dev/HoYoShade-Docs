@@ -43,5 +43,6 @@ ReShade 透過 intercept（攔截）CPU 發去 GPU 嘅圖形 API 通訊，喺畫
    透過官方啟動器或者 Starward 開 Game。遊戲 load 緊嗰陣，個 mon 頂部會彈出 ReShade 編譯提示。入到遊戲之後，撳一下鍵盤嘅 <kbd>Home</kbd> 掣就可以叫出 control panel，跟住揀你鍾意嘅調色 Preset 就搞掂！
 
 詳細圖文操作步驟可以睇返對應啟動器嘅教學：
+- [使用 HoYoShade Hub 啟動器 (推薦)](/zh_hk/Tutorial/hoyoshade-hub)
 - [用官方啟動器 (HoYoPlay)](/zh_hk/Tutorial/mihoyo-launcher)
 - [用第三方啟動器 (Starward)](/zh_hk/Tutorial/starward-launcher)

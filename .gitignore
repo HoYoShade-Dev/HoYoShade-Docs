@@ -1,3 +1,8 @@
 node_modules
 .vitepress/cache
 .vitepress/dist
+.DS_Store
+*.DS_Store
+scripts/
+HANDOVER_WOA_AGENT.md
+capture_hub.ps1

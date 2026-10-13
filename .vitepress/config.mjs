@@ -100,6 +100,7 @@ export default defineConfig({
           {
             text: 'Tutorials',
             items: [
+              { text: 'Use HoYoShade Hub Launcher', link: '/Tutorial/hoyoshade-hub' },
               { text: 'Check your Client Type', link: '/Tutorial/check-your-client' },
               { text: 'Install with HoYoPlay Launcher', link: '/Tutorial/mihoyo-launcher' },
               { text: 'Install with Starward Launcher', link: '/Tutorial/starward-launcher' },
@@ -125,6 +126,7 @@ export default defineConfig({
             {
               text: 'Tutorials',
               items: [
+                { text: 'Use HoYoShade Hub Launcher', link: '/Tutorial/hoyoshade-hub' },
                 { text: 'Check your Client Type', link: '/Tutorial/check-your-client' },
                 { text: 'Install with HoYoPlay Launcher', link: '/Tutorial/mihoyo-launcher' },
                 { text: 'Install with Starward Launcher', link: '/Tutorial/starward-launcher' },
@@ -153,6 +155,7 @@ export default defineConfig({
           {
             text: '教程与指南',
             items: [
+              { text: '使用 HoYoShade Hub 启动器', link: '/zh_cn/Tutorial/hoyoshade-hub' },
               { text: '判断客户端类型', link: '/zh_cn/Tutorial/check-your-client' },
               { text: '使用官方启动器 (HoYoPlay)', link: '/zh_cn/Tutorial/mihoyo-launcher' },
               { text: '使用第三方启动器 (Starward)', link: '/zh_cn/Tutorial/starward-launcher' },
@@ -178,6 +181,7 @@ export default defineConfig({
             {
               text: '教程与指南',
               items: [
+                { text: '使用 HoYoShade Hub 启动器', link: '/zh_cn/Tutorial/hoyoshade-hub' },
                 { text: '判断客户端类型', link: '/zh_cn/Tutorial/check-your-client' },
                 { text: '使用官方启动器 (HoYoPlay)', link: '/zh_cn/Tutorial/mihoyo-launcher' },
                 { text: '使用第三方启动器 (Starward)', link: '/zh_cn/Tutorial/starward-launcher' },
@@ -206,6 +210,7 @@ export default defineConfig({
           {
             text: '教學與指南',
             items: [
+              { text: '使用 HoYoShade Hub 啟動器', link: '/zh_tw/Tutorial/hoyoshade-hub' },
               { text: '判斷客戶端類型', link: '/zh_tw/Tutorial/check-your-client' },
               { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_tw/Tutorial/mihoyo-launcher' },
               { text: '使用第三方啟動器 (Starward)', link: '/zh_tw/Tutorial/starward-launcher' },
@@ -231,6 +236,7 @@ export default defineConfig({
             {
               text: '教學與指南',
               items: [
+                { text: '使用 HoYoShade Hub 啟動器', link: '/zh_tw/Tutorial/hoyoshade-hub' },
                 { text: '判斷客戶端類型', link: '/zh_tw/Tutorial/check-your-client' },
                 { text: '使用官方啟動器 (HoYoPlay)', link: '/zh_tw/Tutorial/mihoyo-launcher' },
                 { text: '使用第三方啟動器 (Starward)', link: '/zh_tw/Tutorial/starward-launcher' },
@@ -259,6 +265,7 @@ export default defineConfig({
           {
             text: '教學與指南',
             items: [
+              { text: '使用 HoYoShade Hub 啟動器', link: '/zh_hk/Tutorial/hoyoshade-hub' },
               { text: '分清客戶端版本', link: '/zh_hk/Tutorial/check-your-client' },
               { text: '用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
               { text: '用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },
@@ -284,6 +291,7 @@ export default defineConfig({
             {
               text: '教學與指南',
               items: [
+                { text: '使用 HoYoShade Hub 啟動器', link: '/zh_hk/Tutorial/hoyoshade-hub' },
                 { text: '分清客戶端版本', link: '/zh_hk/Tutorial/check-your-client' },
                 { text: '用官方啟動器 (HoYoPlay)', link: '/zh_hk/Tutorial/mihoyo-launcher' },
                 { text: '用第三方啟動器 (Starward)', link: '/zh_hk/Tutorial/starward-launcher' },

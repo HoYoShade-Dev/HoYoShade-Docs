@@ -43,5 +43,6 @@ ReShade 通过拦截 CPU 发往 GPU 的图形 API 调用与通信，在后处理
    通过官方启动器或 Starward 启动游戏。游戏加载后，画面顶端会出现 ReShade 编译提示条。进入游戏后按下键盘的 <kbd>Home</kbd> 键即可呼出控制面板并选择画面预设。
 
 详细图文操作步骤可参考对应启动器的安装教程：
+- [使用 HoYoShade Hub 启动器 (推荐)](/zh_cn/Tutorial/hoyoshade-hub)
 - [使用官方启动器 (HoYoPlay)](/zh_cn/Tutorial/mihoyo-launcher)
 - [使用第三方启动器 (Starward)](/zh_cn/Tutorial/starward-launcher)
