@@ -4,7 +4,7 @@ HoYoShade Hub is a modern graphical launcher (WinUI 3) designed for HoYoShade. I
 
 ---
 
-## Step 1: Download and Obtain HoYoShade Hub
+## Step 1: Download and Installation / Extraction
 
 Head over to [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade-Hub/releases/latest) to download the latest release packages.
 
@@ -15,8 +15,24 @@ Head over to [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade
 - **`arm64`**: For Windows on ARM devices, including Qualcomm Snapdragon (Snapdragon X Elite / Plus), Surface Pro ARM, or macOS virtualization (Parallels Desktop WOA).
 
 ### 2. Choose Package Format
-- **Portable Edition (`HoYoShadeHub_Portable_*.7z`)**: Standalone green archive requiring no installation. Extract to any directory (an English path is recommended), then launch `HoYoShadeHub.exe` directly. All configurations and data stay localized in the program directory.
+- **Portable Edition (`HoYoShadeHub_Portable_*.7z`)**: Standalone green archive requiring no installation. All configurations and data stay localized in the extracted directory.
 - **Setup Edition (`HoYoShadeHub_Setup_*.exe`)**: Standard Windows setup installer. Run the installer to automatically configure the application and create Start Menu and Desktop shortcuts.
+
+### 3. Extraction & Installation Steps
+
+#### Option A: Portable Edition (Extract & Run)
+After downloading the `.7z` archive, extract it to any directory with normal write permissions (an English path is recommended):
+1. **Built-in Windows Extractor**: Modern Windows 11 natively supports `.7z` archives. Right-click the `.7z` file, click **Extract All...**, choose the destination folder, and click Extract.
+2. **Using 7-Zip (Recommended)**: For Windows 10 or for a faster, more dependable extraction experience, download and install the free, open-source [7-Zip](https://www.7-zip.org/). Open the archive with 7-Zip, click the **Extract** button on the toolbar (or right-click the file and choose **7-Zip** → **Extract to...**).
+
+![Extracting archive with 7-Zip](/images/hub/en/00-extract-7zip.png)
+
+Once extracted, open the folder and launch `HoYoShadeHub.exe`:
+
+![Extracted folder and executable](/images/hub/en/00-extracted-folder.png)
+
+#### Option B: Setup Edition
+Double-click `HoYoShadeHub_Setup_*.exe` and follow the on-screen instructions to select the install directory. Once finished, launch **HoYoShade Hub** from your desktop shortcut or Start Menu.
 
 ::: details Runtime Prerequisites
 - **OS Requirement**: Windows 10 1809 (Build 17763) or later.

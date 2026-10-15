@@ -4,7 +4,7 @@ HoYoShade Hub 係專門為 HoYoShade 打造嘅現代化圖形介面（WinUI 3）
 
 ---
 
-## 步驟一：下載與獲取 HoYoShade Hub
+## 步驟一：下載與安裝 / 解壓
 
 前往 [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade-Hub/releases/latest) 下載最新發布嘅安裝包或者壓縮檔。
 
@@ -15,8 +15,24 @@ HoYoShade Hub 係專門為 HoYoShade 打造嘅現代化圖形介面（WinUI 3）
 - **`arm64`**：適用於配備高通驍龍（例如 Snapdragon X Elite / Plus 等）、Surface Pro ARM 版或者 Mac 虛擬機（Parallels Desktop WOA）嘅 Windows on ARM 裝置。
 
 ### 2. 揀返啱你嘅安裝形式
-- **便攜版 (`HoYoShadeHub_Portable_*.7z`)**：綠色免安裝版。解壓去任何冇系統權限限制嘅資料夾（建議全英文路徑）之後，直接 double-click 運行 `HoYoShadeHub.exe` 就用得。所有個人設定同數據都會留返喺同一個資料夾入面，方便隨身攜帶或者備份。
+- **便攜版 (`HoYoShadeHub_Portable_*.7z`)**：免安裝綠色版。所有數據同個人設定檔都會留返喺解壓後嘅資料夾入面，方便隨身攜帶或者備份。
 - **安裝版 (`HoYoShadeHub_Setup_*.exe`)**：標準 Windows 安裝精靈。行咗之後跟住指示裝落系統，會自動喺「開始」功能表同桌面整好快捷方式。
+
+### 3. 解壓同安裝步驟
+
+#### 選項 A：用便攜版（解壓即用）
+下載 `.7z` 壓縮檔之後，可以用以下方法解壓去任何冇系統權限限制嘅資料夾（建議全英文路徑）：
+1. **系統自帶解壓縮功能**：現代 Windows 11 已經原生支援 `.7z` 格式。右鍵點擊壓縮檔，揀「全部解壓縮...」，揀好目標資料夾之後撳解壓就搞掂。
+2. **用 7-Zip（推薦）**：對於 Windows 10 或者想有更穩定解壓體驗嘅用家，推薦裝返個免費開源嘅 [7-Zip](https://www.7-zip.org/)。用 7-Zip 打開壓縮檔，撳工具列嘅「提取」掣（或者喺檔案撳右鍵揀「7-Zip」→「提取到...」）完成解壓。
+
+![用 7-Zip 解壓壓縮包](/images/hub/zh_hk/00-extract-7zip.png)
+
+解壓完之後入去資料夾，搵返並 double-click 運行 `HoYoShadeHub.exe`：
+
+![解壓後嘅檔案目錄與主程序](/images/hub/zh_hk/00-extracted-folder.png)
+
+#### 選項 B：用安裝版
+Double-click 運行下載咗嘅 `HoYoShadeHub_Setup_*.exe`，跟住安裝精靈揀安裝資料夾並完成安裝，之後喺桌面或者「開始」功能表打開「HoYoShade Hub」。
 
 ::: details 運行前置環境需求
 - **系統要求**：Windows 10 1809 (組建 17763) 或更高版本。
@@ -98,7 +114,7 @@ HoYoShade Hub 係專門為 HoYoShade 打造嘅現代化圖形介面（WinUI 3）
 
 喺左下角「啟動選項」卡片入面：
 - 勾選 **啟動遊戲**：啟動官方遊戲客戶端。
-- 勾选 **啟動 HoYoShade**：喺遊戲啟動嗰陣自動掛載 HoYoShade 圖形增強核心。
+- 勾選 **啟動 HoYoShade**：喺遊戲啟動嗰陣自動掛載 HoYoShade 圖形增強核心。
 - （可選）按需要勾選 **畫質增強 (啟用 DX12)** 等進階啟動項。
 
 確認設定冇問題之後，點擊右下角嘅「開始遊戲」。
