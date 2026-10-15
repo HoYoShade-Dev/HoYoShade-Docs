@@ -4,9 +4,32 @@ HoYoShade Hub 是專為 HoYoShade 打造的現代化圖形介面（WinUI 3）啟
 
 ---
 
-## 步驟一：初次啟動與執行環境檢查
+## 步驟一：下載與取得 HoYoShade Hub
 
-解壓縮並執行 `HoYoShadeHub.exe`。首次啟動會進入歡迎精靈頁面，啟動器會自動偵測系統環境（包含 WebView2 Runtime、WebP 解碼器與網路連線狀態）。
+前往 [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade-Hub/releases/latest) 下載最新發行的安裝檔或壓縮檔。
+
+![GitHub Releases 資源列表](/images/hub/zh_tw/00-download-releases.png)
+
+### 1. 選擇相應的處理器架構
+- **`x64`**：適用於絕大多數搭載 Intel 或 AMD 64 位元處理器的常規 Windows 桌上型電腦與筆記型電腦。
+- **`arm64`**：適用於搭載高通驍龍（如 Snapdragon X Elite / Plus 等）、Surface Pro ARM 版或 Mac 虛擬機器（Parallels Desktop WOA）的 Windows on ARM 裝置。
+
+### 2. 選擇安裝形式
+- **便攜版 (`HoYoShadeHub_Portable_*.7z`)**：免安裝綠色版。解壓縮至非系統限制目錄（建議全英文路徑）後，直接執行 `HoYoShadeHub.exe` 即可使用。所有設定檔與資料均保留在程式同目錄下，方便隨身攜帶與備份。
+- **安裝版 (`HoYoShadeHub_Setup_*.exe`)**：標準 Windows 安裝精靈。執行後依照精靈指引安裝，會自動在「開始」功能表與桌面建立捷徑。
+
+::: details 執行前置環境需求
+- **系統要求**：Windows 10 1809 (組建 17763) 或更高版本。
+- **[WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2)**：現代 Windows 11 與多數已更新的 Windows 10 通常已內建。若啟動時提示缺少，請前往微軟官方網站下載安裝。
+- **[WebP 影像擴充 (WebP Image Extension)](https://apps.microsoft.com/detail/9pg2dk419drg)**：用於啟動器內背景圖繪製。若背景呈現黑畫面或未顯示，可前往微軟應用程式市集（Microsoft Store）免費安裝。
+- 為獲得最佳視覺效果，建議在 Windows 系統設定中開啟「透明效果」與「動畫效果」。
+:::
+
+---
+
+## 步驟二：初次啟動與執行環境檢查
+
+解壓縮或安裝完成後，執行 `HoYoShadeHub.exe`。首次啟動會進入歡迎精靈頁面，啟動器會自動偵測系統環境（包含 WebView2 Runtime、WebP 解碼器與網路連線狀態）。
 
 ![歡迎介面](/images/hub/zh_tw/01-welcome.png)
 
@@ -29,7 +52,7 @@ HoYoShade Hub 是專為 HoYoShade 打造的現代化圖形介面（WinUI 3）啟
 
 ---
 
-## 步驟二：快速開始與自動化安裝
+## 步驟三：快速開始與自動化安裝
 
 在「初露鋒芒」快速設定頁面，啟動器預設會自動下載並配置最新穩定版 HoYoShade 框架與全量 ReShade 著色器包。
 
@@ -43,55 +66,55 @@ HoYoShade Hub 是專為 HoYoShade 打造的現代化圖形介面（WinUI 3）啟
   <img src="/images/hub/zh_tw/03-download-complete.png" alt="組件安裝完成" style="max-width: 48%; border-radius: 8px;" />
 </div>
 
-安裝完成後，右下角「HoYoShade Hub，啟動！」按鈕會亮起。點選該按鈕即可進入主控制面板。
+安裝完成後，右下角「HoYoShade Hub，啟動！」按鈕將高亮顯示。點選該按鈕即可進入主控制面板。
 
 ---
 
-## 步驟三：遊戲偵測與路徑設定
+## 步驟四：遊戲偵測與路徑設定
 
-進入主介面後，左上角會提示自動尋找本機已安裝的遊戲客戶端：
+進入主介面後，左上角會提示自動尋找本地已安裝的遊戲客戶端：
 
-![自動尋找提示](/images/hub/zh_tw/04-main-auto-search.png)
+![自動查找提示](/images/hub/zh_tw/04-main-auto-search.png)
 
-點選「自動查找」，啟動器會透過系統登錄檔自動辨識 miHoYo / HoYoverse 客戶端。
+點選「自動尋找」，啟動器將透過系統登錄檔自動識別 miHoYo / HoYoverse 客戶端。
 
-::: details 未能自動識別遊戲？手動新增遊戲目錄
-若遊戲客戶端放置於非預設路徑、使用便攜版、外接硬碟或虛擬機共用目錄，登錄檔可能缺少對應資訊。此時可以手動指定遊戲路徑：
+::: details 未能自動識別遊戲？手動加入遊戲目錄
+若客戶端存放在非預設路徑、使用免安裝便攜版、外接硬碟或虛擬機器共用資料夾，登錄檔可能缺少對應資訊。此時可以手動指定遊戲路徑：
 
-1. 點選主介面左上角四宮格圖示或遊戲圖示，切換至目標遊戲（例如原神中國伺服器）。
-2. 點選右下角「啟動遊戲」旁的齒輪設定圖示，進入遊戲設定面板。
-3. 點選「+ 新增遊戲目錄」或「重新定位遊戲」，瀏覽並選擇包含遊戲主執行檔的資料夾（例如包含 `YuanShen.exe` 的客戶端目錄）。
+1. 點選主介面左上角四宮格圖示或遊戲圖示，切換至目標遊戲（例如原神中國服）。
+2. 點選右下角「開始遊戲」旁的齒輪設定圖示，進入遊戲設定面板。
+3. 點選「+ 加入遊戲目錄」或「重新定位遊戲」，瀏覽並選擇遊戲可執行檔所在目錄（例如包含 `YuanShen.exe` 的客戶端資料夾）。
 
-![手動設定遊戲路徑](/images/hub/zh_tw/05-manual-add-game.png)
+![手動配置遊戲路徑](/images/hub/zh_tw/05-manual-add-game.png)
 :::
 
 ---
 
-## 步驟四：設定啟動選項並開啟遊戲
+## 步驟五：設定啟動選項並啟動遊戲
 
-路徑設定完成後，主介面會顯示對應遊戲的儀表板背景與控制面板。
+路徑設定完成後，主介面會呈現對應遊戲的儀表板背景與操作面板。
 
 ![遊戲主儀表板](/images/hub/zh_tw/06-game-dashboard.png)
 
 在左下角「啟動選項」卡片中：
 - 勾選 **啟動遊戲**：啟動官方遊戲客戶端。
-- 勾選 **啟動 HoYoShade**：在遊戲啟動時自動掛載 HoYoShade 畫質增強核心。
-- （可選）依需求勾選 **畫質增強 (啟用 DX12)** 等進階選項。
+- 勾選 **啟動 HoYoShade**：在遊戲啟動時自動掛載 HoYoShade 圖形增強核心。
+- （可選）依需求勾選 **畫質增強 (啟用 DX12)** 等進階啟動項。
 
-確認設定無誤後，點選右下角的「啟動遊戲」。
+確認設定無誤後，點選右下角的「開始遊戲」。
 
 ---
 
-## 步驟五：遊戲內驗證與效果調校
+## 步驟六：遊戲內驗證與效果調節
 
-啟動器喚起遊戲客戶端後，HoYoShade 會自動注入渲染管線。進入遊戲初始載入畫面時，螢幕頂部會彈出 ReShade 狀態列：
+啟動器喚起遊戲客戶端後，HoYoShade 將自動注入渲染管線。進入遊戲初始載入畫面時，螢幕頂端會彈出 ReShade 狀態列：
 
-![遊戲啟動載入畫面](/images/hub/zh_tw/07-launch-ingame.png)
+![遊戲啟動加載畫面](/images/hub/zh_tw/07-launch-ingame.png)
 
-著色器編譯完成後，狀態列會顯示安裝成功提示：
+著色器編譯完成後，狀態列將提示安裝成功：
 
-![ReShade 載入成功](/images/hub/zh_tw/07-launch-ingame-loaded.png)
+![ReShade 加載成功](/images/hub/zh_tw/07-launch-ingame-loaded.png)
 
-- 鍵盤按下 <kbd>Home</kbd> 鍵：呼出 ReShade 控制面板。
-- 在控制面板頂部下拉選單選擇自帶的畫面預設，即可體驗即時光影與畫質增強。
-- 更多疑難排解與快速鍵說明請參閱 [常見問題與疑難排解](/zh_tw/Tutorial/troubleshooting)。
+- 鍵盤按下 <kbd>Home</kbd> 鍵：呼叫出 ReShade 控制面板。
+- 在控制面板頂部下拉選單中挑選內建的畫面預設，即可體驗即時光影與畫質增強。
+- 更多疑難排查與快捷鍵說明請參閱 [常見問題與排錯](/zh_tw/Tutorial/troubleshooting)。

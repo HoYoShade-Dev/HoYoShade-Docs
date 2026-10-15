@@ -4,9 +4,32 @@ HoYoShade Hub is a modern graphical launcher (WinUI 3) designed for HoYoShade. I
 
 ---
 
-## Step 1: Initial Launch and Environment Checks
+## Step 1: Download and Obtain HoYoShade Hub
 
-Extract and run `HoYoShadeHub.exe`. On first launch, the setup wizard runs an environment check verifying the WebView2 Runtime, WebP decoder, and network connectivity.
+Head over to [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade-Hub/releases/latest) to download the latest release packages.
+
+![GitHub Releases Assets list](/images/hub/en/00-download-releases.png)
+
+### 1. Choose Matching Processor Architecture
+- **`x64`**: For the vast majority of standard Windows desktop PCs and laptops equipped with Intel or AMD 64-bit processors.
+- **`arm64`**: For Windows on ARM devices, including Qualcomm Snapdragon (Snapdragon X Elite / Plus), Surface Pro ARM, or macOS virtualization (Parallels Desktop WOA).
+
+### 2. Choose Package Format
+- **Portable Edition (`HoYoShadeHub_Portable_*.7z`)**: Standalone green archive requiring no installation. Extract to any directory (an English path is recommended), then launch `HoYoShadeHub.exe` directly. All configurations and data stay localized in the program directory.
+- **Setup Edition (`HoYoShadeHub_Setup_*.exe`)**: Standard Windows setup installer. Run the installer to automatically configure the application and create Start Menu and Desktop shortcuts.
+
+::: details Runtime Prerequisites
+- **OS Requirement**: Windows 10 1809 (Build 17763) or later.
+- **[WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2)**: Pre-installed on Windows 11 and most updated Windows 10 systems. If prompted on launch, download and install it from Microsoft's official site.
+- **[WebP Image Extension](https://apps.microsoft.com/detail/9pg2dk419drg)**: Used to render background wallpapers in the launcher. If backgrounds appear black or missing, install it for free from the Microsoft Store.
+- For the best visual experience, enable **Transparency effects** and **Animation effects** in Windows Settings.
+:::
+
+---
+
+## Step 2: Initial Launch and Environment Checks
+
+After extracting or installing, run `HoYoShadeHub.exe`. On first launch, the setup wizard runs an environment check verifying the WebView2 Runtime, WebP decoder, and network connectivity.
 
 ![Welcome screen](/images/hub/en/01-welcome.png)
 
@@ -29,7 +52,7 @@ Once the environment checks pass, click **Next** in the bottom-right corner.
 
 ---
 
-## Step 2: Quick Start and Component Installation
+## Step 3: Quick Start and Component Installation
 
 On the "Ready to Begin?" quick setup screen, the launcher selects the latest stable HoYoShade framework and the complete ReShade shader/addon pack by default.
 
@@ -43,55 +66,55 @@ On the "Ready to Begin?" quick setup screen, the launcher selects the latest sta
   <img src="/images/hub/en/03-download-complete.png" alt="Installation complete" style="max-width: 48%; border-radius: 8px;" />
 </div>
 
-When installation finishes, the **HoYoShade Hub, Start!** button in the bottom-right corner becomes active. Click it to enter the main dashboard.
+Once installation completes, the **HoYoShade Hub, Launch!** button in the bottom right will highlight. Click it to enter the main dashboard.
 
 ---
 
-## Step 3: Game Detection and Path Configuration
+## Step 4: Game Detection and Path Configuration
 
-Upon entering the main interface, the launcher prompts you to detect installed games:
+Upon entering the main dashboard, the launcher prompts to scan for local installed game clients in the top left:
 
-![Auto search prompt](/images/hub/en/04-main-auto-search.png)
+![Auto Search Prompt](/images/hub/en/04-main-auto-search.png)
 
-Click **Auto Search**. The launcher scans the Windows registry for existing miHoYo / HoYoverse game installations.
+Click **Auto Search** to automatically detect miHoYo / HoYoverse clients registered in Windows Registry.
 
-::: details Game Not Found Automatically? Add Game Path Manually
-If your game client is installed in a non-standard location, on an external drive, or in a portable directory without registry entries, configure the directory manually:
+::: details Game Not Found? Manually Add Game Directory
+If your game client is located in a custom path, on an external drive, a portable directory, or a virtual machine shared folder, the registry entry may not be found. You can locate it manually:
 
-1. Click the game selector icon in the top-left corner to choose your game (for example, Genshin Impact).
-2. Click the gear icon next to **Start Game** in the bottom-right corner to open Game Settings.
-3. Click **+ Add Game Directory** or **Relocate Game**, then select the directory containing the game executable (such as `YuanShen.exe` or `GenshinImpact.exe`).
+1. Click the grid icon or game icon in the top-left corner to switch to your target game (e.g. Genshin Impact Global / CN).
+2. Click the gear settings icon next to **Start Game** in the bottom-right corner to open the Game Settings page.
+3. Click **+ Add Game Directory** or **Relocate Game**, and select the folder containing the game executable (e.g. the folder containing `GenshinImpact.exe` or `YuanShen.exe`).
 
-![Manual Game Path Configuration](/images/hub/en/05-manual-add-game.png)
+![Manual game configuration](/images/hub/en/05-manual-add-game.png)
 :::
 
 ---
 
-## Step 4: Configure Launch Options and Start Game
+## Step 5: Configure Launch Options and Start Game
 
-With the game client path configured, the main dashboard displays the game artwork and launch settings.
+Once the game path is configured, the dashboard displays the game artwork and controls.
 
 ![Game Dashboard](/images/hub/en/06-game-dashboard.png)
 
-In the **Launch Options** card at the bottom-left:
-- Check **Launch Game**: Starts the official game client.
-- Check **Launch HoYoShade**: Injects the HoYoShade graphics runtime when the game starts.
-- (Optional) Toggle **Graphics Quality Enhancement (DirectX 12)** if supported by your client.
+In the bottom-left **Launch Options** card:
+- Check **Start Game**: Launches the official game client.
+- Check **Start HoYoShade**: Automatically attaches HoYoShade graphics core on game launch.
+- (Optional) Toggle **Enhanced Graphics (DX12)** or other advanced startup options as needed.
 
-Once your options are configured, click **Start Game** in the bottom-right corner.
+Review your choices and click **Start Game** in the bottom-right corner.
 
 ---
 
-## Step 5: Verify In-Game Injection
+## Step 6: In-Game Verification and Effects Tuning
 
-When the game launches, HoYoShade hooks into the graphics pipeline. The ReShade banner appears at the top of the game screen during initial load:
+When the game launches, HoYoShade hooks into the rendering pipeline. During the initial game loading screen, the ReShade status banner appears at the top:
 
-![Game loading banner](/images/hub/en/07-launch-ingame.png)
+![Game launch screen](/images/hub/en/07-launch-ingame.png)
 
-Once effect compilation finishes, the status bar confirms installation:
+Once shader compilation completes, the status bar confirms installation:
 
-![ReShade compiled successfully](/images/hub/en/07-launch-ingame-loaded.png)
+![ReShade Loaded Successfully](/images/hub/en/07-launch-ingame-loaded.png)
 
 - Press <kbd>Home</kbd> on your keyboard to open the ReShade overlay.
-- Select your preferred preset from the dropdown menu at the top of the overlay to apply shading effects.
-- For troubleshooting and hotkey configuration, refer to [Troubleshooting](/Tutorial/troubleshooting).
+- Select from the bundled presets in the top dropdown to experience real-time lighting and graphic enhancements.
+- For troubleshooting or hotkey remapping, consult the [Troubleshooting Guide](/en/Tutorial/troubleshooting).

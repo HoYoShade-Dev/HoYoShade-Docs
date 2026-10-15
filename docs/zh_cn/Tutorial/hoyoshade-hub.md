@@ -4,9 +4,32 @@ HoYoShade Hub 是为 HoYoShade 打造的现代化图形界面（WinUI 3）启动
 
 ---
 
-## 步骤一：初次启动与运行环境检查
+## 步骤一：下载与获取 HoYoShade Hub
 
-解压并运行 `HoYoShadeHub.exe`。首次启动会进入欢迎向导页面，启动器会自动检测系统运行环境（包括 WebView2 Runtime、WebP 解码器与网络连接状态）。
+前往 [HoYoShade Hub GitHub Releases](https://github.com/DuolaD/HoYoShade-Hub/releases/latest) 获取最新发布的安装包或压缩包。
+
+![GitHub Releases 资源列表](/images/hub/zh_cn/00-download-releases.png)
+
+### 1. 选择匹配的处理器架构
+- **`x64`**：适用于绝大多数搭载 Intel 或 AMD 64 位处理器的常规 Windows 台式机与笔记本。
+- **`arm64`**：适用于搭载高通骁龙（如 Snapdragon X Elite / Plus 等）、Surface Pro ARM 版或 Mac 虚拟机（Parallels Desktop WOA）的 Windows on ARM 设备。
+
+### 2. 选择安装形式
+- **便携版 (`HoYoShadeHub_Portable_*.7z`)**：免安装绿色版。解压到任意非系统受限目录（建议全英文路径）后，直接运行 `HoYoShadeHub.exe`。所有数据与配置文件保存在程序同目录下，便于随身携带与备份。
+- **安装版 (`HoYoShadeHub_Setup_*.exe`)**：标准 Windows 安装向导。运行后按提示安装，会自动在开始菜单与桌面创建快捷方式。
+
+::: details 运行前置依赖环境
+- **系统要求**：Windows 10 1809 (内部版本 17763) 或更高版本。
+- **[WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2)**：现代 Windows 11 与多数已更新的 Windows 10 系统已预装。若启动时提示缺失，请前往微软官网下载安装。
+- **[WebP 图像扩展 (WebP Image Extension)](https://apps.microsoft.com/detail/9pg2dk419drg)**：用于启动器内背景图渲染。若背景呈现黑屏，可前往微软应用商店（Microsoft Store）免费安装。
+- 为获得最佳视觉效果，建议在 Windows 系统设置中开启「透明效果」与「动画效果」。
+:::
+
+---
+
+## 步骤二：初次启动与运行环境检查
+
+解压或安装完成后，运行 `HoYoShadeHub.exe`。首次启动会进入欢迎向导页面，启动器会自动检测系统运行环境（包括 WebView2 Runtime、WebP 解码器与网络连接状态）。
 
 ![欢迎界面](/images/hub/zh_cn/01-welcome.png)
 
@@ -29,7 +52,7 @@ HoYoShade Hub 是为 HoYoShade 打造的现代化图形界面（WinUI 3）启动
 
 ---
 
-## 步骤二：快速开始与自动化安装
+## 步骤三：快速开始与自动化安装
 
 在「初露锋芒」快速配置页面，启动器默认勾选下载并配置最新稳定版 HoYoShade 框架与全量 ReShade 着色器包。
 
@@ -47,7 +70,7 @@ HoYoShade Hub 是为 HoYoShade 打造的现代化图形界面（WinUI 3）启动
 
 ---
 
-## 步骤三：游戏检测与路径配置
+## 步骤四：游戏检测与路径配置
 
 进入主界面后，左上角会提示自动查找本地已安装的游戏客户端：
 
@@ -67,7 +90,7 @@ HoYoShade Hub 是为 HoYoShade 打造的现代化图形界面（WinUI 3）启动
 
 ---
 
-## 步骤四：配置启动选项并启动游戏
+## 步骤五：配置启动选项并启动游戏
 
 路径配置完成后，主界面会呈现对应游戏的仪表盘背景与操作面板。
 
@@ -82,7 +105,7 @@ HoYoShade Hub 是为 HoYoShade 打造的现代化图形界面（WinUI 3）启动
 
 ---
 
-## 步骤五：游戏内验证与效果调节
+## 步骤六：游戏内验证与效果调节
 
 启动器唤起游戏客户端后，HoYoShade 将自动注入渲染管线。进入游戏初始加载画面时，屏幕顶端会弹出 ReShade 状态栏：
 
